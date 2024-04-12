@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac5"
+  },
+  "mappingType": "explicit",
+  "input": [
+    "dumpling"
+  ],
+  "synonyms": [
+    "won ton",
+    "wonton",
+    "matzo ball",
+    "gnocchi",
+    "matzah ball",
+    "pierogi"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac3"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "shawarma",
+    "gyros"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac4"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "pie",
+    "tart",
+    "cobbler"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b7d834053fed8281c1ac6"
+  },
+  "mappingType": "explicit",
+  "input": [
+    "pasta"
+  ],
+  "synonyms": [
+    "spaghetti",
+    "macaroni",
+    "fettuccine",
+    "cappellini",
+    "ravioli",
+    "rigatoni",
+    "linguine",
+    "penne",
+    "ziti",
+    "tortellini",
+    "tagliatelle",
+    "lasagna",
+    "lasagne",
+    "manicotti"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "617f3b42ade8e71c16489dbe"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "burger",
+    "burgers",
+    "hamburger",
+    "hamburgers",
+    "cheeseburger",
+    "cheeseburgers"
+  ],
+  "date_inserted": null,
+  "date_updated": {
+    "$date": "2021-11-15T00:33:50.573Z"
+  },
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "6268a01b5899f60be615cb66"
+  },
+  "input": [
+    "noodles"
+  ],
+  "mappingType": "explicit",
+  "synonyms": [
+    "lo mein",
+    "chow mein",
+    "pasta",
+    "udon",
+    "ramen",
+    "spaghetti",
+    "alphabetti",
+    "macaroni",
+    "pasta"
+  ],
+  "date_inserted": {
+    "$date": "2022-04-27T01:44:59.057Z"
+  },
+  "editable": false
+}]
