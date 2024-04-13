@@ -1,0 +1,18 @@
+{
+  "analyzer": "lucene.japanese",
+  "searchAnalyzer": "lucene.japanese",
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "location": [
+        {
+          "dynamic": true,
+          "type": "document"
+        },
+        {
+          "type": "geo"
+        }
+      ]
+    }
+  }
+}
