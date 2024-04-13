@@ -7,6 +7,8 @@ import SynonymsPage from "./pages/SynonymsPage";
 import IndexPage from "./pages/IndexPage";
 import Navbar from "./components/Navbar";
 
+import "./i18n"; // For Multi-Language support
+
 function App() {
   return (
     <>

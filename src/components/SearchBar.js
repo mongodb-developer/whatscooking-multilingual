@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import AutoSuggestions from "./AutoSuggestions";
+import { useTranslation } from 'react-i18next';
 
 const removeDuplicateRestaurants = (restaurants) =>
   restaurants.filter(
@@ -24,6 +25,8 @@ const SearchBar = ({
 
   const Suggestions_AC_Endpoint =
     "https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/restaurants/getRestaurantsAutocomplete";
+  
+  const { t } = useTranslation();
 
   // this is a function definition that calls another function API.fetchContent()
   const fetchAC_Content = async (searchTerm) => {
@@ -67,7 +70,7 @@ const SearchBar = ({
         <div className="my-auto text-6xl"></div>
         <input
           type="text"
-          placeholder="restaurants..."
+          placeholder={t('restaurantTextPlaceHolder')}
           autoComplete="off"
           onChange={(event) => {
             setSearchTerm(event.target.value);

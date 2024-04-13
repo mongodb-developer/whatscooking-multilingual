@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect } from "react";
 import { SearchParametersContext } from "../store/SearchParametersContext";
+import { useTranslation } from 'react-i18next';
 
 const { REACT_APP_GETRESTAURANTS_SECRET, REACT_APP_GETFACETS_SECRET } =
   process.env;
@@ -48,6 +49,8 @@ export const useHomeFetch = () => {
     setShowFacets,
   } = useContext(SearchParametersContext);
 
+  const { t } = useTranslation();
+
   const postSearch = async () => {
     // POST TO GETRESTAURANTSENDPOINT
 
@@ -65,7 +68,7 @@ export const useHomeFetch = () => {
       setRestaurants(res.data.restaurants);
       if (res.data.restaurants.length === 0) {
         setNoResultsMsg(
-          "NO RESULTS MATCH YOUR SEARCH. 😞 TRY DIFFERENT SEARCH PARAMETERS."
+          t('searchNoMatch')
         );
       } else setNoResultsMsg("");
       setStages({
