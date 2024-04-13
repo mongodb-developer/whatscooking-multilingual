@@ -1,14 +1,14 @@
 {
-    "appTitle": "TODO",
-    "disclaimer": "TODO",
-    "findButton": "TODO",
-    "restaurantTextPlaceHolder": "TODO",
-    "foodTextPlaceHolder": "TODO",
-    "searchNoMatch": "TODO",
-    "averageStarRating": "TODO",
-    "geospatialSearchOptions": "TODO",
-    "aggregation": "TODO",
-    "functionScore": "TODO",
-    "synonyms": "TODO",
-    "dataAndIndexes": "TODO"
+    "appTitle": "アトラス検索デモ：レストラン検索",
+    "disclaimer": "このアプリはフェイクデータを利用しています。実際のレストラン検索に利用しないでください",
+    "findButton": "検索",
+    "restaurantTextPlaceHolder": "レストラン名",
+    "foodTextPlaceHolder": "食べ物",
+    "searchNoMatch": "レストランが見つかりませんでした。他のパラメータを試してみてください。",
+    "averageStarRating": "平均スター数",
+    "geospatialSearchOptions": "地理空間検索オプション",
+    "aggregation": "アグリゲーション",
+    "functionScore": "ファンクションスコア",
+    "synonyms": "類似語",
+    "dataAndIndexes": "データとインデックス"
 }
