@@ -1,0 +1,14 @@
+{
+    "appTitle": "Atlas Search Demo: Restaurant Finder",
+    "disclaimer": "This data is partially mocked. Enjoy playing with the app, but please do not use to make dining decisions.",
+    "findButton": "Find",
+    "restaurantTextPlaceHolder": "restaurants...",
+    "foodTextPlaceHolder": "food...",
+    "searchNoMatch": "NO RESULTS MATCH YOUR SEARCH. 😞 TRY DIFFERENT SEARCH PARAMETERS.",
+    "averageStarRating": "Average Star Rating",
+    "geospatialSearchOptions": "Geospatial Search Options",
+    "aggregation": "Aggregation",
+    "functionScore": "Function Score",
+    "synonyms": "Synonyms",
+    "dataAndIndexes": "Data & Indexes"
+}

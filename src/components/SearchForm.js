@@ -2,6 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import Icon from "../images/whatscooking.png";
 import SearchIcon from "../images/ATLAS_Search.png";
+import { useTranslation } from 'react-i18next';
 
 const SearchForm = ({
   setSearchTerm,
@@ -24,6 +25,8 @@ const SearchForm = ({
     setSubmitted(true);
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
       <form
@@ -34,7 +37,7 @@ const SearchForm = ({
           <img src={Icon} alt="app logo" className="my-auto w-32"></img>
           <div className="flex flex-col w-full">
             <div className="mb-2 text-3xl font-bold text-white text-center font-body">
-              Atlas Search Demo: Restaurant Finder
+              {t('appTitle')}
             </div>
             <div className="flex w-full pl-8 my-auto">
               <SearchBar
@@ -54,7 +57,7 @@ const SearchForm = ({
                   value={food}
                   type="text"
                   id="menu"
-                  placeholder="food..."
+                  placeholder={t('foodTextPlaceHolder')}
                   autoComplete="off"
                   className="px-5 bg-transparent outline-none font-body"
                 />
@@ -64,7 +67,7 @@ const SearchForm = ({
                   type="submit"
                   className="flex items-center w-32 h-12 pl-4 my-auto space-x-4 text-2xl text-white rounded bg-mongo-500 to-green-500 font-body hover:shadow-2xl hover:bg-green-700 focus:outline-none"
                 >
-                  <span>Find</span>
+                  <span>{t('findButton')}</span>
                   <div className="flex items-center justify-center w-16 h-16 text-6xl rounded-full bg-mongo-700">
                     👩🏽‍🍳
                   </div>

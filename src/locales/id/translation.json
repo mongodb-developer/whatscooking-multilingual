@@ -1,0 +1,14 @@
+{
+    "appTitle": "Demo Atlas Search: Pencarian Restoran",
+    "disclaimer": "Data ini sebagian dipalsukan. Nikmati bermain dengan aplikasi ini, tapi jangan gunakan untuk membuat keputusan makan.",
+    "findButton": "Cari",
+    "restaurantTextPlaceHolder": "restoran...",
+    "foodTextPlaceHolder": "makanan...",
+    "searchNoMatch": "TIDAK ADA HASIL YANG SESUAI DENGAN PENCARIAN ANDA. 😞 COBA PARAMETER PENCARIAN YANG BERBEDA.",
+    "averageStarRating": "Peringkat Bintang",
+    "geospatialSearchOptions": "Opsi Pencarian Geospasial",
+    "aggregation": "Agregasi",
+    "functionScore": "Skor Function",
+    "synonyms": "Sinonim",
+    "dataAndIndexes": "Data & Indeks"
+}

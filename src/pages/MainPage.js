@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useTranslation } from 'react-i18next';
 import { SearchStageProvider } from "../store/SearchStageContext";
 import { SearchParametersContext } from "../store/SearchParametersContext";
 import SearchForm from "../components/SearchForm";
@@ -67,6 +68,8 @@ const MainPage = () => {
     showFacets,
     setShowFacets,
   } = useContext(SearchParametersContext);
+
+  const { t } = useTranslation();
 
   let displayRestaurants = false;
   let topPicks = [];
@@ -210,8 +213,7 @@ const MainPage = () => {
             />
           )}
           <div className="sticky bottom-0 px-4 py-2 mx-auto text-white italic text-center rounded-full shadow-lg bg-gradient-to-r from-mongo-600 to-mongo-700">
-            This data is partially mocked. Enjoy playing with the app, but
-            please do not use to make dining decisions.
+            {t('disclaimer')}
           </div>
         </div>
       </div>

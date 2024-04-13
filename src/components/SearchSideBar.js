@@ -6,6 +6,7 @@ import FACETICON from "../images/filterfacet.png";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useTranslation } from 'react-i18next';
 
 const SearchSideBar = ({
   setOperator,
@@ -45,6 +46,8 @@ const SearchSideBar = ({
     setStarsObject,
     starsObject,
   } = useContext(SearchStageContext);
+
+  const { t } = useTranslation();
 
   //------------------------CUISINE FACETS----------------------------------------------
 
@@ -254,7 +257,7 @@ const SearchSideBar = ({
       <div className="flex flex-col bg-white border border-gray-300 rounded w-1/5">
         {/************* SEARCH OPERATOR SECTION ******************/}
         <label className="font-bold text-tolopea-500 text-center mt-2">
-          Geospatial Search Options
+          {t('geospatialSearchOptions')}
         </label>
         <div className="flex h-12 px-1 ">
           {operator === "near" ? (
@@ -328,7 +331,7 @@ const SearchSideBar = ({
 
         <div className="mx-auto">
           <label className="font-bold text-tolopea-500">
-            Average Star Rating:{" "}
+            {t('averageStarRating')}:{" "}
           </label>
           <ReactStars
             size={36}
