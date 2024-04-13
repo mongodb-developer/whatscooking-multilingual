@@ -20,15 +20,6 @@ if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ] || [ -z "$AWS_
   exit 1
 fi
 
-# Verify AWS account number
-expected_account_number="979559056307"
-account_number=$(aws sts get-caller-identity --query "Account" --output text)
-
-if [ "$account_number" != "$expected_account_number" ]; then
-  echo "This script must be run from the AWS account 979559056307 (Solution Architects), current account is $account_number."
-  exit 1
-fi
-
 # Define the bucket and region
 bucket_name="whatscooking-aseansa"
 region="ap-southeast-1"
