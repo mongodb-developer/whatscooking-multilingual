@@ -1,1 +1,46 @@
-[]
+[
+    {
+        "http_method": "GET",
+        "route": "/restaurants/getRestaurantsAutocomplete",
+        "function_name": "getRestaurantsAutocomplete",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false,
+        "return_type": "JSON"
+    },
+    {
+        "http_method": "POST",
+        "route": "/getRestaurants",
+        "function_name": "getRestaurants",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false,
+        "return_type": "JSON"
+    },
+    {
+        "http_method": "POST",
+        "route": "/restaurants/getFacets",
+        "function_name": "getFacets",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": false,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false,
+        "return_type": "JSON"
+    },
+    {
+        "http_method": "POST",
+        "route": "/synonyms/getFoodSynonyms",
+        "function_name": "getFoodSynonyms",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false,
+        "return_type": "JSON"
+    }
+]
