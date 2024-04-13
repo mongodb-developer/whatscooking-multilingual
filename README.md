@@ -196,9 +196,10 @@ response
 
 <h2>To Deploy Frontend to AWS S3...</h2>
 
-1. Make sure that you're using NodeJS v16 to successfully build the artifacts
+1. Make sure that you're using NodeJS v16 to successfully build the artifacts. If you're using `nvm`, just type `nvm use` to swich to the correct NodeJS version
 2. Set AWS temporary credentials in your environment variable and ensure that you're pointing to the correct AWS account
-3. Run <code>./deploy_to_s3.sh</code> 
+3. Run <code>./deploy_to_s3.sh</code>
+4. The S3 bucket is fronted by CloudFront, so it might take a while for the cache to be refreshed
 
 ---
 <h2>React Components....</h2>

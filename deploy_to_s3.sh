@@ -25,11 +25,8 @@ bucket_name="whatscooking-aseansa"
 region="ap-southeast-1"
 
 # Empty the S3 bucket
-echo "Checking if bucket $bucket_name is not empty..."
-if aws s3 ls "s3://$bucket_name" --region $region | grep -q 'PRE' || grep -q '202'; then
-  echo "Emptying the bucket..."
-  aws s3 rm "s3://$bucket_name" --recursive --region $region
-fi
+echo "Emptying the bucket..."
+aws s3 rm "s3://$bucket_name" --recursive --region $region
 
 # Upload the contents of the "build" folder to the S3 bucket
 echo "Uploading contents to $bucket_name..."
