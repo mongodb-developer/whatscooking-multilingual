@@ -1,0 +1,30 @@
+{
+  "analyzer": "lucene.japanese",
+  "searchAnalyzer": "lucene.japanese",
+  "mappings": {
+    "dynamic": false,
+    "fields": {
+      "borough": {
+        "type": "stringFacet"
+      },
+      "cuisine": [
+        {
+          "type": "stringFacet"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "location": {
+        "indexShapes": true,
+        "type": "geo"
+      },
+      "name": {
+        "type": "string"
+      },
+      "stars": {
+        "type": "number"
+      }
+    }
+  }
+}
