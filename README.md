@@ -194,6 +194,12 @@ response
 6. Change MongoDB Connectionstring at <code>src/pages/IndexPage.js</code> to your own one.
 7. Run <code>npm start </code> .
 
+<h2>To Deploy Frontend to AWS S3...</h2>
+
+1. Make sure that you're using NodeJS v16 to successfully build the artifacts
+2. Set AWS temporary credentials in your environment variable and ensure that you're pointing to the correct AWS account
+3. Run <code>./deploy_to_s3.sh</code> 
+
 ---
 <h2>React Components....</h2>
 
