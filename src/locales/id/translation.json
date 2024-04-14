@@ -10,5 +10,6 @@
     "aggregation": "Agregasi",
     "functionScore": "Skor Function",
     "synonyms": "Sinonim",
-    "dataAndIndexes": "Data & Indeks"
+    "dataAndIndexes": "Data & Indeks",
+    "collection_name": "restaurants"
 }
