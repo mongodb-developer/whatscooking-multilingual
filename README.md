@@ -1,7 +1,7 @@
 <h1 align="center">What's Cooking with Atlas Search</h1>
 
 <h2 align="center">A Restaurant Finder Application Demo MongoDB Atlas Search</h2>
-<p>Hello! 👋 This application allows you to search lightning fast in English/Thai/Indonesian/Japanese based on a variety of search parameters and data types:</p>
+<p>Hello! 👋 This application allows you to search lightning fast through over 25,000 restaurants in the New York city area based on a variety of search parameters and data types:</p>
 <ul>
 <li>restaurant name</li>
 <li>geolocation coordinates</li>
@@ -234,8 +234,5 @@ response
 Find the Realm application and code for these webhooks in the <code>WhatsCookingRealm</code> folder.</p>
 
 <h5>If you have any questions or feedback about this repo, feel free to create an Issue or PR in this repo or reach out to me on Twitter @YouOldMaid.</h5>
-
-
-This application is multilingual version of [mongodb-developers/whatscooking](https://github.com/mongodb-developer/WhatsCooking)
 
 <h4>Also please join our online <a href="https://developer.mongodb.com/community/forums/">MongoDB Community</a> to interact with our product and engineering teams along with thousands of other MongoDB and Realm users. <br/><br/>Have fun and happy coding!</h4></h4>
