@@ -9,8 +9,8 @@ const { REACT_APP_GETRESTAURANTS_SECRET, REACT_APP_GETFACETS_SECRET } =
 //const GetRestaurantsEndpoint = `https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/getRestaurants?secret=${REACT_APP_GETRESTAURANTS_SECRET}`;
 // const GetFacetsEndpoint = `https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/restaurants/getFacets?secret=${REACT_APP_GETFACETS_SECRET}`;
 
-const GetRestaurantsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-qztoq/endpoint/getRestaurants`; //fake url. Please change
-const GetFacetsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-qztoq/endpoint/restaurants/getFacets`;  //fake url. Please change
+const GetRestaurantsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/getRestaurants`;
+const GetFacetsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getFacets`;
 
 export const useHomeFetch = () => {
   const {
@@ -63,6 +63,7 @@ export const useHomeFetch = () => {
       borough: borough,
       cuisine: cuisine,
       stars: stars,
+      collection_name: t('collection_name'),
     };
     axios.post(GetRestaurantsEndpoint, data).then((res) => {
       setRestaurants(res.data.restaurants);
@@ -89,6 +90,7 @@ export const useHomeFetch = () => {
       stars: stars,
       borough: borough,
       cuisine: cuisine,
+      collection_name: t('collection_name'),
     };
     axios.post(GetFacetsEndpoint, facetData).then((res) => {
       let count = res.data.results[0].count.lowerBound.$numberLong; // facet
