@@ -10,5 +10,6 @@
     "aggregation": "TODO",
     "functionScore": "TODO",
     "synonyms": "TODO",
-    "dataAndIndexes": "TODO"
+    "dataAndIndexes": "TODO",
+    "collection_name": "restaurants_th"
 }

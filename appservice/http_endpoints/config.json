@@ -26,7 +26,7 @@
         "route": "/restaurants/getFacets",
         "function_name": "getFacets",
         "validation_method": "NO_VALIDATION",
-        "respond_result": false,
+        "respond_result": true,
         "fetch_custom_user_data": false,
         "create_user_on_auth": false,
         "disabled": false,

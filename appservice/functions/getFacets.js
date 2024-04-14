@@ -1,8 +1,7 @@
+
 exports = async function(payload, response) {
   console.log("IN GETFACETS POST REQUEST");
-  
-    // Querying a mongodb collection:
-    const collection = context.services.get("mongodb-atlas").db("whatscooking").collection("restaurants");
+
     
     if (!payload.body) {
     return({
@@ -17,7 +16,10 @@ exports = async function(payload, response) {
     console.log(JSON.stringify(searchParameters));
     
      
-    let{ searchTerm, food, operator, dist, stars, borough, cuisine } = searchParameters;
+    let{ searchTerm, food, operator, dist, stars, borough, cuisine, collection_name } = searchParameters;
+      
+    // Querying a mongodb collection:
+    const collection = context.services.get("mongodb-atlas").db("whatscooking").collection(collection_name);
     
     let pathArray = ["name", "cuisine"];
     let distance = 1609;

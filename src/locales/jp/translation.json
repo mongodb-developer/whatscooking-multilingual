@@ -10,5 +10,6 @@
     "aggregation": "アグリゲーション",
     "functionScore": "ファンクションスコア",
     "synonyms": "類似語",
-    "dataAndIndexes": "データとインデックス"
+    "dataAndIndexes": "データとインデックス",
+    "collection_name": "restaurants_jp"
 }
