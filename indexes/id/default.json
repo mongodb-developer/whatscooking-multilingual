@@ -1,0 +1,18 @@
+{
+  "analyzer": "lucene.indonesian",
+  "searchAnalyzer": "lucene.indonesian",
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "location": [
+        {
+          "dynamic": true,
+          "type": "document"
+        },
+        {
+          "type": "geo"
+        }
+      ]
+    }
+  }
+}
