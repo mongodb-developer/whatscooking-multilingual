@@ -32,4 +32,25 @@ aws s3 rm "s3://$bucket_name" --recursive --region $region
 echo "Uploading contents to $bucket_name..."
 aws s3 cp build/ "s3://$bucket_name" --recursive --region $region
 
+# Ask user if they want to invalidate the CloudFront cache
+echo "Do you want to invalidate the CloudFront cache? (y/n)"
+read invalidate_cache
+
+case "$invalidate_cache" in
+  [yY] | [yY][eE][sS])
+    echo "Please enter the CloudFront distribution ID:"
+    read distribution_id
+    if [[ -n $distribution_id ]]; then
+      echo "Invalidating CloudFront cache..."
+      aws cloudfront create-invalidation --distribution-id $distribution_id --paths "/*"
+    else
+      echo "Distribution ID was not provided."
+      exit 1
+    fi
+    ;;
+  *)
+    echo "Skipping CloudFront cache invalidation."
+    ;;
+esac
+
 echo "Operation completed successfully."
