@@ -370,17 +370,19 @@ const SearchSideBar = ({
                 )}
               </div>
             ))}
-            <div className="mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-              <input
-                type="radio"
-                name="borough"
-                value={null}
-                defaultChecked={borough === null}
-              />
-              <label>All</label>
-          </div>
+            {Object.keys(boroughs).length > 0 && (
+              <div className="mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
+                <input
+                  type="radio"
+                  name="borough"
+                  value={null}
+                  defaultChecked={borough === null}
+                />
+                <label>All</label>
+              </div>
+            )}
         </div>
-        
+
         {showBorough && (
           <div
             onClick={() => {
