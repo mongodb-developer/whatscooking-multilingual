@@ -51,79 +51,19 @@ const SearchSideBar = ({
 
   //------------------------CUISINE FACETS----------------------------------------------
 
-  let AmericanCount = 0;
-  let ChineseCount = 0;
-  let FrenchCount = 0;
-  let HamburgersCount = 0;
-  let ItalianCount = 0;
-  let JapaneseCount = 0;
-  let MexicanCount = 0;
-  let PizzaCount = 0;
-  let BakeryCount = 0;
+  let cuisines = {};
 
-  for (let i = 0; i < cuisineBuckets.length; i++) {
-    switch (cuisineBuckets[i]._id) {
-      case "American":
-        AmericanCount = cuisineBuckets[i].count;
-        break;
-      case "Chinese":
-        ChineseCount = cuisineBuckets[i].count;
-        break;
-      case "French":
-        FrenchCount = cuisineBuckets[i].count;
-        break;
-      case "Hamburgers":
-        HamburgersCount = cuisineBuckets[i].count;
-        break;
-      case "Italian":
-        ItalianCount = cuisineBuckets[i].count;
-        break;
-      case "Japanese":
-        JapaneseCount = cuisineBuckets[i].count;
-        break;
-      case "Mexican":
-        MexicanCount = cuisineBuckets[i].count;
-        break;
-      case "Pizza":
-        PizzaCount = cuisineBuckets[i].count;
-        break;
-      case "Bakery":
-        BakeryCount = cuisineBuckets[i].count;
-        break;
-
-      default:
-        break;
-    }
-  }
+  cuisineBuckets.forEach(cuisineBucket => {
+    cuisines[cuisineBucket._id] = cuisineBucket.count;
+  });
 
   //------------------------BOROUGH FACETS----------------------------------------------
-  let ManhattanCount = 0;
-  let BronxCount = 0;
-  let BrooklynCount = 0;
-  let QueensCount = 0;
-  let StatenIslandCount = 0;
 
-  for (let i = 0; i < boroughBuckets.length; i++) {
-    switch (boroughBuckets[i]._id) {
-      case "Manhattan":
-        ManhattanCount = boroughBuckets[i].count.$numberLong;
-        break;
-      case "Brooklyn":
-        BrooklynCount = boroughBuckets[i].count.$numberLong;
-        break;
-      case "Queens":
-        QueensCount = boroughBuckets[i].count.$numberLong;
-        break;
-      case "Bronx":
-        BronxCount = boroughBuckets[i].count.$numberLong;
-        break;
-      case "Staten Island":
-        StatenIslandCount = boroughBuckets[i].count.$numberLong;
-        break;
-      default:
-        break;
-    }
-  }
+  let boroughs = {};
+
+  boroughBuckets.forEach(boroughBucket => {
+    boroughs[boroughBucket._id] = boroughBucket.count;
+  });
 
   const ratingChanged = (rating) => {
     setStars(rating);
@@ -375,107 +315,21 @@ const SearchSideBar = ({
         )}
 
         <div className="" onChange={onChangeCuisine}>
-          <div className="flex mb-1 ml-10 space-x-6 cursor-pointer">
-            <input
-              type="checkbox"
-              name="American"
-              defaultChecked={cuisine.includes("American")}
-            />
-            <label htmlFor="American">American</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({AmericanCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer">
-            <input
-              type="checkbox"
-              name="Chinese"
-              defaultChecked={cuisine.includes("Chinese")}
-            />
-            <label htmlFor="Chinese">Chinese</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({ChineseCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="French"
-              defaultChecked={cuisine.includes("French")}
-            />
-            <label htmlFor="French">French</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({FrenchCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="Hamburgers"
-              defaultChecked={cuisine.includes("Hamburgers")}
-            />
-            <label htmlFor="Hamburgers">Hamburgers</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({HamburgersCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="Italian"
-              defaultChecked={cuisine.includes("Italian")}
-            />
-            <label htmlFor="Italian">Italian</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({ItalianCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="Japanese"
-              defaultChecked={cuisine.includes("Japanese")}
-            />
-            <label htmlFor="Japanese">Japanese</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({JapaneseCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer">
-            <input
-              type="checkbox"
-              name="Mexican"
-              defaultChecked={cuisine.includes("Mexican")}
-            />
-            <label htmlFor="Mexican">Mexican</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({MexicanCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="Pizza"
-              defaultChecked={cuisine.includes("Pizza")}
-            />
-            <label htmlFor="Pizza">Pizza</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({PizzaCount})</div>
-            )}
-          </div>
-
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer ">
-            <input
-              type="checkbox"
-              name="Bakery"
-              defaultChecked={cuisine.includes("Bakery")}
-            />
-            <label htmlFor="Bakery">Bakery</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({BakeryCount})</div>
-            )}
-          </div>
+            {Object.keys(cuisines).map((cuisineKey) => (
+              <div className="flex mb-2 ml-10 space-x-6 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name={cuisineKey}
+                  defaultChecked={cuisine.includes(cuisineKey)}
+                />
+                <label htmlFor={cuisineKey}>{cuisineKey}</label>
+                {showFacets && (
+                  <div className="text-deep-cerulean-600">({cuisines[cuisineKey]})</div>
+                )}
+              </div>
+            ))}
         </div>
+
         {showCuisine && (
           <div
             onClick={() => {
@@ -501,79 +355,32 @@ const SearchSideBar = ({
 
         {/************* BOROUGH SECTION ******************/}
 
-        <div className="text" onChange={onChangeBorough}>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer borough">
-            <input
-              type="radio"
-              name="borough"
-              value="Manhattan"
-              defaultChecked={borough === "Manhattan"}
-            />
-            <label htmlFor="Manhattan">Manhattan</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({ManhattanCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-            <input
-              type="radio"
-              value="Brooklyn"
-              name="borough"
-              defaultChecked={borough === "Brooklyn"}
-            />
-            <label htmlFor="Brooklyn">Brooklyn</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({BrooklynCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-            <input
-              type="radio"
-              value="Queens"
-              name="borough"
-              defaultChecked={borough === "Queens"}
-            />
-            <label htmlFor="Queens">Queens</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({QueensCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-            <input
-              type="radio"
-              value="Bronx"
-              name="borough"
-              defaultChecked={borough === "Bronx"}
-            />
-            <label htmlFor="Bronx">Bronx</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">({BronxCount})</div>
-            )}
-          </div>
-          <div className="flex mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-            <input
-              type="radio"
-              value="Staten Island"
-              name="borough"
-              defaultChecked={borough === "Staten Island"}
-            />
-            <label htmlFor="Staten Island">Staten Island</label>
-            {showFacets && (
-              <div className="text-deep-cerulean-600">
-                ({StatenIslandCount})
+        <div className="" onChange={onChangeBorough}>
+            {Object.keys(boroughs).map((boroughKey) => (
+              <div className="flex mb-2 ml-10 space-x-6 cursor-pointer borough">
+                <input
+                  type="radio"
+                  name="borough"
+                  value={boroughKey}
+                  defaultChecked={borough === boroughKey}
+                />
+                <label htmlFor={boroughKey}>{boroughKey}</label>
+                {showFacets && (
+                  <div className="text-deep-cerulean-600">({boroughs[boroughKey]})</div>
+                )}
               </div>
-            )}
-          </div>
-          <div className="mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
-            <input
-              type="radio"
-              name="borough"
-              value={null}
-              defaultChecked={borough === null}
-            />
-            <label>All</label>
+            ))}
+            <div className="mb-2 ml-10 space-x-6 cursor-pointer checkbox-borough">
+              <input
+                type="radio"
+                name="borough"
+                value={null}
+                defaultChecked={borough === null}
+              />
+              <label>All</label>
           </div>
         </div>
+        
         {showBorough && (
           <div
             onClick={() => {
