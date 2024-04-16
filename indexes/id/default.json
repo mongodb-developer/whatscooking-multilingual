@@ -4,6 +4,16 @@
   "mappings": {
     "dynamic": true,
     "fields": {
+      "borough": {
+        "analyzer": "lucene.keyword",
+        "searchAnalyzer": "lucene.keyword",
+        "type": "string"
+      },
+      "cuisine": {
+        "analyzer": "lucene.keyword",
+        "searchAnalyzer": "lucene.keyword",
+        "type": "string"
+      },
       "location": [
         {
           "dynamic": true,
