@@ -1,4 +1,5 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 export const SearchParametersContext = createContext();
 // export SearchProvider and SearchContext
@@ -34,6 +35,45 @@ export const SearchParametersProvider = (props) => {
   const [boroughBuckets, setBoroughBuckets] = useState([]);
   const [facetOverallCount, setFacetOverallCount] = useState(0);
   const [showFacets, setShowFacets] = useState(false);
+  const [language, setLanguage] = useState('en');
+
+  // Set default coordinates to MongoDB NYC Office
+  const [lng, setLng] = useState(-73.98474);
+  const [lat, setLat] = useState(40.76289);
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(language).then(() => {
+      switch (language) {
+        case "en":
+          // NYC
+          setLng(-73.98474);
+          setLat(40.76289);
+          break;
+        case "jp":
+          // Tokyo
+          setLng(139.7454);
+          setLat(35.6586);
+          break;
+        case "th":
+          // Bangkok
+          setLng(100.5865);
+          setLat(13.7365);
+          break;
+        case "id":
+          // Jakarta
+          setLng(106.823024);
+          setLat(-6.193667);
+          break;
+        default:
+          // NYC
+          setLng(-73.98474);
+          setLat(40.76289);
+          break;
+      }
+    });
+  }, [language]);
 
   const value = {
     restaurants,
@@ -88,6 +128,12 @@ export const SearchParametersProvider = (props) => {
     facetOverallCount,
     showFacets,
     setShowFacets,
+    language,
+    setLanguage,
+    lng,
+    setLng,
+    lat,
+    setLat,
   };
 
   return (

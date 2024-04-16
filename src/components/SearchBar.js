@@ -21,7 +21,7 @@ const SearchBar = ({
   const initial = useRef(true);
   const [suggestions, setSuggestions] = useState([]);
 
-  if (searchTerm === "") setShowSuggestions(false);
+  // if (searchTerm === "") setShowSuggestions(false);
 
   const Suggestions_AC_Endpoint =
     "https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/restaurants/getRestaurantsAutocomplete";
@@ -44,25 +44,40 @@ const SearchBar = ({
     }
   };
 
+  // Fix issue "Cannot update a component (`SearchParametersProvider`) while rendering a different component (`SearchBar`)"
   useEffect(() => {
     if (initial.current) {
       initial.current = false;
       return;
     }
-    // BUILD OUT AUTOCOMPLETE TERMS
-    if (searchTerm !== "" && searchTerm.length > 3) {
-      fetchAC_Content(searchTerm);
-
-      if (suggestions.length !== 0) {
-        setShowSuggestions(true);
-        return;
-      }
+    if (searchTerm === "") {
       setShowSuggestions(false);
+    } else if (searchTerm.length > 3) {
+      fetchAC_Content(searchTerm);
+      setShowSuggestions(suggestions.length > 0);
     }
-    return;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm, suggestions.length, setShowSuggestions]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchTerm]);
+  // useEffect(() => {
+  //   if (initial.current) {
+  //     initial.current = false;
+  //     return;
+  //   }
+  //   // BUILD OUT AUTOCOMPLETE TERMS
+  //   if (searchTerm !== "" && searchTerm.length > 3) {
+  //     fetchAC_Content(searchTerm);
+
+  //     if (suggestions.length !== 0) {
+  //       setShowSuggestions(true);
+  //       return;
+  //     }
+  //     setShowSuggestions(false);
+  //   }
+  //   return;
+
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [searchTerm]);
 
   return (
     <div className="relative flex flex-col w-2/3">

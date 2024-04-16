@@ -67,6 +67,8 @@ const MainPage = () => {
     showSearchStage,
     showFacets,
     setShowFacets,
+    lng,
+    lat,
   } = useContext(SearchParametersContext);
 
   const { t } = useTranslation();
@@ -180,6 +182,8 @@ const MainPage = () => {
             <NYCMap
               className=""
               restaurants={restaurants}
+              markerLongitude={lng}
+              markerLatitude={lat}
               submitted={submitted}
             />
             {displayRestaurants && (

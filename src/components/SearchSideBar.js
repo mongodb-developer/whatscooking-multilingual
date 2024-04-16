@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import ReactStars from "react-rating-stars-component";
 
 import { SearchStageContext } from "../store/SearchStageContext";
+import { SearchParametersContext } from '../store/SearchParametersContext';
 import FACETICON from "../images/filterfacet.png";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -46,6 +47,10 @@ const SearchSideBar = ({
     setStarsObject,
     starsObject,
   } = useContext(SearchStageContext);
+
+  const {
+    lng, lat,
+  } = useContext(SearchParametersContext);
 
   const { t } = useTranslation();
 
@@ -170,7 +175,7 @@ const SearchSideBar = ({
       circle: {
         center: {
           type: "Point",
-          coordinates: [-73.98474, 40.76289],
+          coordinates: [lng, lat],
         },
         radius: dist,
       },
@@ -184,7 +189,7 @@ const SearchSideBar = ({
     near: {
       origin: {
         type: "Point",
-        coordinates: [-73.98474, 40.76289],
+        coordinates: [lng, lat],
       },
       pivot: 1609,
       path: "location",
@@ -316,7 +321,7 @@ const SearchSideBar = ({
 
         <div className="" onChange={onChangeCuisine}>
             {Object.keys(cuisines).map((cuisineKey) => (
-              <div className="flex mb-2 ml-10 space-x-6 cursor-pointer">
+              <div key={cuisineKey} className="flex mb-2 ml-10 space-x-6 cursor-pointer">
                 <input
                   type="checkbox"
                   name={cuisineKey}
@@ -357,7 +362,7 @@ const SearchSideBar = ({
 
         <div className="" onChange={onChangeBorough}>
             {Object.keys(boroughs).map((boroughKey) => (
-              <div className="flex mb-2 ml-10 space-x-6 cursor-pointer borough">
+              <div key={boroughKey} className="flex mb-2 ml-10 space-x-6 cursor-pointer borough">
                 <input
                   type="radio"
                   name="borough"

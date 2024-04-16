@@ -47,6 +47,8 @@ export const useHomeFetch = () => {
     facetOverallCount,
     setFacetOverallCount,
     setShowFacets,
+    lng,
+    lat,
   } = useContext(SearchParametersContext);
 
   const { t } = useTranslation();
@@ -64,6 +66,8 @@ export const useHomeFetch = () => {
       cuisine: cuisine,
       stars: stars,
       collection_name: t('collection_name'),
+      lng: lng,
+      lat: lat,
     };
     axios.post(GetRestaurantsEndpoint, data).then((res) => {
       setRestaurants(res.data.restaurants);
@@ -91,6 +95,8 @@ export const useHomeFetch = () => {
       borough: borough,
       cuisine: cuisine,
       collection_name: t('collection_name'),
+      lng: lng,
+      lat: lat,
     };
     axios.post(GetFacetsEndpoint, facetData).then((res) => {
       let count = res.data.results[0].count.lowerBound.$numberLong; // facet
