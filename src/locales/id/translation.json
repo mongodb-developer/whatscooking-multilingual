@@ -11,5 +11,6 @@
     "functionScore": "Skor Function",
     "synonyms": "Sinonim",
     "dataAndIndexes": "Data & Indeks",
-    "collection_name": "restaurants_id"
+    "collection_name": "restaurants_id",
+    "synonyms_name": "menu_synonyms_id"
 }
