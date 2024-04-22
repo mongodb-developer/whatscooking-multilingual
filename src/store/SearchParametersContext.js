@@ -1,9 +1,73 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 export const SearchParametersContext = createContext();
 // export SearchProvider and SearchContext
 
 export const SearchParametersProvider = (props) => {
+
+  const defaultCuisines = {
+    en: [
+      { _id: 'American', count: 0 },
+      { _id: 'Chinese', count: 0 },
+      { _id: 'French', count: 0 },
+      { _id: 'Hamburgers', count: 0 },
+      { _id: 'Italian', count: 0 },
+      { _id: 'Japanese', count: 0 },
+      { _id: 'Mexican', count: 0 },
+      { _id: 'Pizza', count: 0 },
+      { _id: 'Bakery', count: 0 },
+    ],
+    jp: [
+      { _id: 'TODO', count: 0 },
+    ],
+    th: [
+      { _id: 'TODO', count: 0 },
+    ],
+    id: [
+      { _id: 'Kopi', count: 0 },
+      { _id: 'Meksiko', count: 0 },
+      { _id: 'Cina', count: 0 },
+      { _id: 'Es Krim', count: 0 },
+      { _id: 'Perancis', count: 0 },
+      { _id: 'Thailand', count: 0 },
+      { _id: 'Vietnam', count: 0 },
+      { _id: 'Timur Tengah', count: 0 },
+      { _id: 'Roti', count: 0 },
+      { _id: 'Italia', count: 0 },
+      { _id: 'Korea', count: 0 },
+      { _id: 'Indonesia', count: 0 },
+      { _id: 'India', count: 0 },
+      { _id: 'Jepang', count: 0 },
+      { _id: 'Amerika', count: 0 }
+    ]
+  }
+
+  const defaultBoroughs = {
+    en: [
+      { _id: 'Manhattan', count: 0 },
+      { _id: 'Brooklyn', count: 0 },
+      { _id: 'Queens', count: 0 },
+      { _id: 'Bronx', count: 0 },
+      { _id: 'Staten Island', count: 0 },
+    ],
+    jp: [
+      { _id: 'TODO', count: 0 },
+    ],
+    th: [
+      { _id: 'TODO', count: 0 },
+    ],
+    id: [
+      { _id: 'Kebon Sirih', count: 0 },
+      { _id: 'Kebon Kacang', count: 0 },
+      { _id: 'Kebon Melati', count: 0 },
+      { _id: 'Gondangdia', count: 0 },
+      { _id: 'Menteng', count: 0 },
+      { _id: 'Kampung Bali', count: 0 },
+      { _id: 'Gambir', count: 0 }
+    ]
+  }
+
   const [restaurants, setRestaurants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [food, setFood] = useState("");
@@ -30,10 +94,51 @@ export const SearchParametersProvider = (props) => {
   const [showSearchStage, setShowSearchStage] = useState(true);
   const [aggregationErrorMsg, setAggregationErrorMsg] = useState("");
   const [noResultsMsg, setNoResultsMsg] = useState("");
-  const [cuisineBuckets, setCuisineBuckets] = useState([]);
-  const [boroughBuckets, setBoroughBuckets] = useState([]);
+  const [cuisineBuckets, setCuisineBuckets] = useState(defaultCuisines["en"]);
+  const [boroughBuckets, setBoroughBuckets] = useState(defaultBoroughs["en"]);
   const [facetOverallCount, setFacetOverallCount] = useState(0);
   const [showFacets, setShowFacets] = useState(false);
+  const [language, setLanguage] = useState('en');
+
+  // Set default coordinates to MongoDB NYC Office
+  const [lng, setLng] = useState(-73.98474);
+  const [lat, setLat] = useState(40.76289);
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(language).then(() => {
+      switch (language) {
+        case "en":
+          // NYC
+          setLng(-73.98474);
+          setLat(40.76289);
+          break;
+        case "jp":
+          // Tokyo
+          setLng(139.7454);
+          setLat(35.6586);
+          break;
+        case "th":
+          // Bangkok
+          setLng(100.5865);
+          setLat(13.7365);
+          break;
+        case "id":
+          // Jakarta
+          setLng(106.823024);
+          setLat(-6.193667);
+          break;
+        default:
+          // NYC
+          setLng(-73.98474);
+          setLat(40.76289);
+          break;
+      }
+    });
+    setCuisineBuckets(defaultCuisines[language]);
+    setBoroughBuckets(defaultBoroughs[language]);
+  }, [language]);
 
   const value = {
     restaurants,
@@ -88,6 +193,12 @@ export const SearchParametersProvider = (props) => {
     facetOverallCount,
     showFacets,
     setShowFacets,
+    language,
+    setLanguage,
+    lng,
+    setLng,
+    lat,
+    setLat,
   };
 
   return (

@@ -10,7 +10,15 @@ exports = async function(payload, response) {
 
       let searchParameters = EJSON.parse(payload.body.text());
       console.log(JSON.stringify(searchParameters));
-      let{ searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, collection_name } = searchParameters;
+      let { searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, collection_name, lng, lat } = searchParameters;
+
+      if (lng === undefined || lat === undefined) {
+        lng = -73.98474;
+        lat = 40.76289;
+  
+        console.log('Longitude or Latitude is not defined. Using default values')
+      }
+
       // Querying a mongodb collection:
       const collection = context.services.get("mongodb-atlas").db("whatscooking").collection(collection_name);
 
@@ -47,16 +55,16 @@ exports = async function(payload, response) {
       }
       
      
-     //MongoDB NYC Office
-     const lat = 40.76289;
-     const long = -73.984
+    //  //MongoDB NYC Office
+    //  const lat = 40.76289;
+    //  const long = -73.984
      
       let calledAggregation = [];
       
   /******************************** NOW I HAVE ALL NECESSARY PARAMETERS --- CAN START BUILDING ***********************************/
        
       // call helper functions to build aggregation stages 
-      let searchStage = buildSearchStage(searchTerm, food, foodArray, pathArray, operator, distance, borough, cuisine, stars, functionScore);
+      let searchStage = buildSearchStage(searchTerm, food, foodArray, pathArray, operator, distance, borough, cuisine, stars, functionScore, lng, lat);
       let limitStage = {'$limit': 21};
       let projectStage = buildProjectStage();
        
@@ -92,7 +100,7 @@ exports = async function(payload, response) {
     
   };
   
-  function buildSearchStage(searchTerm, food, foodArray, pathArray, operator, distance, borough, cuisine, stars, functionScore){
+  function buildSearchStage(searchTerm, food, foodArray, pathArray, operator, distance, borough, cuisine, stars, functionScore, lng, lat){
     console.log("BUILDSEARCHSTAGE FUNCTION");
   
   // BUCKLE IN. MOST DIFFICULT FUNCTION. BUILDING OUT SEARCH BUILDING BLOCKS 
@@ -136,7 +144,7 @@ exports = async function(payload, response) {
       };    // END FUNCTION STAGE*******************
     } 
    
-    let returnedObjectFromBuildMust = buildCompoundMust(searchTerm, food, foodArray, operator, distance);
+    let returnedObjectFromBuildMust = buildCompoundMust(searchTerm, food, foodArray, operator, distance, lng, lat);
     filterArray = buildCompoundFilter(stars, cuisine, borough);
   
     mustArray = returnedObjectFromBuildMust.mustArray;
@@ -222,7 +230,7 @@ exports = async function(payload, response) {
     return projectStage;
   }
   
-  function buildCompoundMust(searchTerm, food, foodArray, operator, distance){
+  function buildCompoundMust(searchTerm, food, foodArray, operator, distance, lng, lat){
      
      console.log("IN BUILDCOMPOUNDMUST FUNCTION");
       let searchObject = {};
@@ -285,7 +293,7 @@ exports = async function(payload, response) {
                 "near":{
                     "origin":{
                         "type":"Point",
-                        "coordinates": [ -73.98474, 40.76289 ],
+                        "coordinates": [ lng, lat ],
                     },
                     "pivot":1609,
                     path: "location" 
@@ -298,7 +306,7 @@ exports = async function(payload, response) {
                   circle:{
                     center:{
                       type:"Point",
-                      coordinates:[-73.98474, 40.76289]
+                      coordinates:[lng, lat]
                       },
                       radius:distance
                     },

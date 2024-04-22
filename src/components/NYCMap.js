@@ -26,12 +26,12 @@ const Marker = ({ rest, idx, topPicks }) => {
   );
 };
 
-const NYCMap = ({ restaurants }) => {
+const NYCMap = ({ restaurants, markerLongitude, markerLatitude }) => {
+
   let longitude, latitude, point;
 
   const mapContainerRef = useRef(null);
-  const [lng, setLng] = useState(-73.98474);
-  const [lat, setLat] = useState(40.76289);
+
   const [zoom, setZoom] = useState(14);
 
   useEffect(() => {
@@ -39,13 +39,12 @@ const NYCMap = ({ restaurants }) => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/streets-v11",
-      center: [lng, lat],
+      center: [markerLongitude, markerLatitude],
       zoom: zoom,
     });
 
-    // marker for the MongoDB New York office
     let marker = new mapboxgl.Marker({ color: "#c53030" })
-      .setLngLat([-73.98474, 40.76289])
+      .setLngLat([markerLongitude, markerLatitude])
       .addTo(map);
 
     if (!restaurants || restaurants.length === 0) {
@@ -81,7 +80,7 @@ const NYCMap = ({ restaurants }) => {
           .addTo(map);
       });
     } // end if
-  }, [restaurants]);
+  }, [markerLongitude, markerLatitude, restaurants]);
 
   return <div ref={(el) => (mapContainerRef.current = el)} style={styles} />;
 };

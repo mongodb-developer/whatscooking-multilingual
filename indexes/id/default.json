@@ -1,0 +1,28 @@
+{
+  "analyzer": "lucene.indonesian",
+  "searchAnalyzer": "lucene.indonesian",
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "borough": {
+        "analyzer": "lucene.keyword",
+        "searchAnalyzer": "lucene.keyword",
+        "type": "string"
+      },
+      "cuisine": {
+        "analyzer": "lucene.keyword",
+        "searchAnalyzer": "lucene.keyword",
+        "type": "string"
+      },
+      "location": [
+        {
+          "dynamic": true,
+          "type": "document"
+        },
+        {
+          "type": "geo"
+        }
+      ]
+    }
+  }
+}
