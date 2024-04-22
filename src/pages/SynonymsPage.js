@@ -8,6 +8,7 @@ import Icon from "../images/whatscooking.png";
 import IdeasIcon from "../images/foodIdeas.png";
 import SYNCOL from "../images/SynonymCol.png";
 import DocHero from "../images/DocModelHero.JPG";
+import { useTranslation } from 'react-i18next';
 
 const { REACT_APP_GETSYNONYMS_SECRET } = process.env;
 
@@ -17,11 +18,13 @@ const SynonymsPage = () => {
   const [submissionMessage, setSubmissionMessage] = useState("");
   const [deleteMessage, setDeleteMessage] = useState("");
   const [updateMessage, setUpdateMessage] = useState("");
+  
+  const { t } = useTranslation();
 
   const getSynonyms = async () => {
     let storedSynonyms = await (
       await fetch(
-        `https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-XXXXX/endpoint/synonyms/getFoodSynonyms`
+        "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?synonyms="+ t('synonyms_name')
       )
     ).json();
     setLoadedSynonyms(storedSynonyms.foodSynonyms);
