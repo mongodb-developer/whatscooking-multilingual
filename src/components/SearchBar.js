@@ -24,7 +24,7 @@ const SearchBar = ({
   // if (searchTerm === "") setShowSuggestions(false);
 
   const Suggestions_AC_Endpoint =
-    "https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/restaurants/getRestaurantsAutocomplete";
+    "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getRestaurantsAutocomplete";
   
   const { t } = useTranslation();
 
@@ -33,7 +33,7 @@ const SearchBar = ({
     let autocomplete_names_endpoint = Suggestions_AC_Endpoint;
     if (searchTerm) {
       autocomplete_names_endpoint =
-        autocomplete_names_endpoint + `?restname=${searchTerm}`;
+        autocomplete_names_endpoint + `?restname=${searchTerm}&locale=${t('locale')}`;
     }
     try {
       let restaurants = await (await fetch(autocomplete_names_endpoint)).json();
