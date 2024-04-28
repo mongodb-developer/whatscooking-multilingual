@@ -65,7 +65,7 @@ export const useHomeFetch = () => {
       borough: borough,
       cuisine: cuisine,
       stars: stars,
-      collection_name: t('collection_name'),
+      locale: t('locale'),
       lng: lng,
       lat: lat,
     };
@@ -94,7 +94,7 @@ export const useHomeFetch = () => {
       stars: stars,
       borough: borough,
       cuisine: cuisine,
-      collection_name: t('collection_name'),
+      collection_name: t('locale'),
       lng: lng,
       lat: lat,
     };
