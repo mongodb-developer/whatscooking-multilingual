@@ -19,7 +19,15 @@ export const SearchParametersProvider = (props) => {
       { _id: 'Bakery', count: 0 },
     ],
     jp: [
-      { _id: 'TODO', count: 0 },
+      { _id: 'イタリアン', count: 0 },
+      { _id: 'カフェ', count: 0 },
+      { _id: 'フレンチ', count: 0 },
+      { _id: 'ベーカリー', count: 0 },
+      { _id: 'ラーメン', count: 0 },
+      { _id: '中華料理', count: 0 },
+      { _id: '寿司', count: 0 },
+      { _id: '居酒屋', count: 0 },
+      { _id: '焼肉', count: 0 },
     ],
     th: [
       { _id: 'TODO', count: 0 },
