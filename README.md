@@ -1,7 +1,7 @@
 <h1 align="center">What's Cooking with Atlas Search</h1>
 
 <h2 align="center">A Restaurant Finder Application Demo MongoDB Atlas Search</h2>
-<p>Hello! 👋 This application allows you to search lightning fast through over 25,000 restaurants in the New York city area based on a variety of search parameters and data types:</p>
+<p>Hello! 👋 This application allows you to search lightning fast through restaurants in Thai, Indonesian and Japanese based on a variety of search parameters and data types:</p>
 <ul>
 <li>restaurant name</li>
 <li>geolocation coordinates</li>
@@ -15,6 +15,8 @@
 </div>
 <br/>
 <p><em>Note: This dataset is mocked. Please do not use to make actual dining decisions.</em></p>
+<p><em>Note: This demo is multiligual version of the following repos.
+https://github.com/mongodb-developer/WhatsCooking/</em></p>
 
 <p> What's Cooking implements many Atlas Search features from autocomplete to custom function scoring. Using the $search operator in a MongoDB aggregation pipeline, we can build fine-grained searches across text, numerics, and geospatial data. By building out What's Cooking, you'll learn all sorts of ways MongoDB allows you to build complex, fine-grained full-text searches on your Atlas data.</p>
 
@@ -31,13 +33,13 @@
 - synonyms
 
 <p>Check out the video of the MongoDB.Live keynote to see a demonstration of all the features or visit the link below to play around with the finished application, hosted entirely in MongoDB Atlas:</p>
-<h2 align="center"><a href="https://www.atlassearchrestaurants.com">www.atlassearchrestaurants.com</a></h2>
+<h2 align="center"><a href="https://whatscooking.mongosa.net/">whatscooking.mongosa.net</a></h2>
 
 <p>This application is hosted entirely by MongoDB Atlas was created using:</p>
 
 - React
 - Tailwind CSS
-- MongoDB Realm for backend HTTPs endpoints and webhooks
+- MongoDB Realm for backend HTTPs endpoints and functions
 - A modified sample dataset based on MongoDB's Atlas sample_restaurants dataset
 
 <p float="left">
@@ -58,7 +60,7 @@
 
 <pre>
   <code>
-mongodb+srv://mongodb:atlassearch@shareddemoapps.dezdl.mongodb.net/whatscooking
+mongodb+srv://cooking:cooking@whatscooking.8u6sklg.mongodb.net/whatscooking
 </code>
 </pre>
 
@@ -74,7 +76,7 @@ mongodb+srv://mongodb:atlassearch@shareddemoapps.dezdl.mongodb.net/whatscooking
 <li> Load data to Atlas cluster:
 <ul>
 <li>database: <code>whatscooking</code></li>
-<li>collection: <code>restaurants</code>, <code>menu_synonyms</code></li>
+<li>collection: <code>restaurants_[locale] (e.g. restaurants_en)</code>, <code>menu_synonyms_[locale](e.g. menu_synonyms_en)</code></li>
 </ul>
 </li>
 
@@ -148,7 +150,7 @@ You can test each HTTPS endpoints with the following commands
 <h3>/restaurants/getRestaurantsAutocomplete</h3>
 command
 <pre>
-$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-XXXXX/endpoint/restaurants/getRestaurantsAutocomplete?restname="burger"
+$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getRestaurantsAutocomplete?restname="burger"&locale=en
 </pre>
 response
 <pre>
@@ -159,8 +161,9 @@ command
 <pre>
 curl \
 -H "Content-Type: application/json" \
--d '{"searchTerm": "burger ", "food": "", "operator": "text",    "dist": 1, "stars": 1, "cuisine": []}' \
-https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-qztoq/endpoint/getRestaurants
+-d '{"searchTerm": "burger ", "food": "", "operator": "text",    "dist": 1, "stars": 1, "cuisine": [], "locale": "en"}' \
+https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/getRestaurants
+
 </pre>
 
 response
@@ -173,8 +176,8 @@ command
 <pre>
 curl \
 -H "Content-Type: application/json" \
--d '{"searchTerm": "burger", "food": "", "operator": "text", "dist": 1, "stars": 1, "cuisine": []}' \
-https://ap-southeast-1.aws.data.mongodb-api.com/app/whatscooking-qztoq/endpoint/restaurants/getFacets
+-d '{"searchTerm": "burger", "food": "", "operator": "text", "dist": 1, "stars": 1, "cuisine": [], "locale": "en"}' \
+https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getFacets
 </pre>
 
 response
@@ -182,7 +185,15 @@ response
 {"results":[{"count":{"lowerBound":183},"facet":{"cuisineFacet":{"buckets":[{"_id":"Hamburgers","count":105},{"_id":"American","count":69},{"_id":"Other","count":3},{"_id":"Jewish/Kosher","count":2},{"_id":"Pizza/Italian","count":2},{"_id":"Latin (Cuban, Dominican, Puerto Rican, South \u0026 Central American)","count":1},{"_id":"Mexican","count":1}]},"boroughFacet":{"buckets":[{"_id":"Manhattan","count":69},{"_id":"Brooklyn","count":47},{"_id":"Queens","count":36},{"_id":"Bronx","count":23},{"_id":"Staten Island","count":8}]}}}],"searchMetaStageString":"{\"$searchMeta\":{\"index\":\"facetIndex\",\"facet\":{\"operator\":{\"text\":{\"query\":\"burger\",\"path\":[\"name\",\"cuisine\"]}},\"facets\":{\"cuisineFacet\":{\"type\":\"string\",\"path\":\"cuisine\"},\"boroughFacet\":{\"type\":\"string\",\"path\":\"borough\"}}}}}","searchMetaStage":{"$searchMeta":{"index":"facetIndex","facet":{"operator":{"text":{"query":"burger","path":["name","cuisine"]}},"facets":{"cuisineFacet":{"type":"string","path":"cuisine"},"boroughFacet":{"type":"string","path":"borough"}}}}},"ok":true}
 </pre>
 <h3>/synonyms/getFoodSynonyms</h3>
-🚧
+command
+<pre>
+$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?synonyms=pasta&locale=en
+
+</pre>
+
+response
+<pre>
+</pre>
 
 <h2>To Run This Application....</h2>
 
