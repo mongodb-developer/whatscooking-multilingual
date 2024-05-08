@@ -82,7 +82,6 @@ const MainPage = () => {
     displayRestaurants = true;
     topPicks = restaurants.slice(0, 5);
     picks = restaurants.slice(5);
-    console.log(restaurants);
     // console.log("Top Picks", topPicks);
     // console.log("picks", picks);
   }
