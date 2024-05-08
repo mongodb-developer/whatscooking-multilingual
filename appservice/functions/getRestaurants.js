@@ -10,7 +10,7 @@ exports = async function(payload, response) {
 
       let searchParameters = EJSON.parse(payload.body.text());
       console.log(JSON.stringify(searchParameters));
-      let { searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, collection_name, lng, lat } = searchParameters;
+      let { searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, locale, lng, lat } = searchParameters;
 
       if (lng === undefined || lat === undefined) {
         lng = -73.98474;
@@ -20,7 +20,7 @@ exports = async function(payload, response) {
       }
 
       // Querying a mongodb collection:
-      const collection = context.services.get("mongodb-atlas").db("whatscooking").collection(collection_name);
+      const collection = context.services.get("mongodb-atlas").db("whatscooking").collection('restaurants_' + locale);
 
        // EMPTY SEARCH
       if (!searchTerm && !food && (operator==="text") && (cuisine.length===0) && (stars ===1)){   // added && (stars ===1) Jan 3

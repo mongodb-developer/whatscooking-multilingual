@@ -16,7 +16,7 @@ exports = async function(payload, response) {
     console.log(JSON.stringify(searchParameters));
     
      
-    let{ searchTerm, food, operator, dist, stars, borough, cuisine, collection_name, lng, lat } = searchParameters;
+    let{ searchTerm, food, operator, dist, stars, borough, cuisine, locale, lng, lat } = searchParameters;
 
     if (lng === undefined || lat === undefined) {
       lng = -73.98474;
@@ -26,7 +26,7 @@ exports = async function(payload, response) {
     }
       
     // Querying a mongodb collection:
-    const collection = context.services.get("mongodb-atlas").db("whatscooking").collection(collection_name);
+    const collection = context.services.get("mongodb-atlas").db("whatscooking").collection("restaurants_" + locale);
     
     let pathArray = ["name", "cuisine"];
     let distance = 1609;

@@ -11,6 +11,5 @@
     "functionScore": "ファンクションスコア",
     "synonyms": "類似語",
     "dataAndIndexes": "データとインデックス",
-    "collection_name": "restaurants_jp",
-    "synonyms_name": "menu_synonyms_jp"
+    "locale": "jp"
 }

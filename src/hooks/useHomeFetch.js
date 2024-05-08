@@ -65,7 +65,7 @@ export const useHomeFetch = () => {
       borough: borough,
       cuisine: cuisine,
       stars: stars,
-      collection_name: t('collection_name'),
+      locale: t('locale'),
       lng: lng,
       lat: lat,
     };
@@ -94,11 +94,12 @@ export const useHomeFetch = () => {
       stars: stars,
       borough: borough,
       cuisine: cuisine,
-      collection_name: t('collection_name'),
+      locale: t('locale'),
       lng: lng,
       lat: lat,
     };
     axios.post(GetFacetsEndpoint, facetData).then((res) => {
+      console.log()
       let count = res.data.results[0].count.lowerBound; // facet
       setFacetOverallCount(count);
       setCuisineBuckets(res.data.results[0].facet.cuisineFacet.buckets);
