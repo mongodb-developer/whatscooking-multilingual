@@ -11,5 +11,6 @@
     "functionScore": "TODO",
     "synonyms": "TODO",
     "dataAndIndexes": "TODO",
-    "collection_name": "restaurants_th"
+    "collection_name": "restaurants_th",
+    "synonyms_name": "menu_synonyms_th"
 }

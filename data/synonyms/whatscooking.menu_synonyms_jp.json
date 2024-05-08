@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "617f3b42ade8e71c16489dbe"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "バーガー",
+    "burger",
+    "ハンバーガー",
+    "hamburger",
+    "チーズバーガー"
+  ],
+  "date_inserted": null,
+  "date_updated": {
+    "$date": "2021-11-15T00:33:50.573Z"
+  },
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b7d834053fed8281c1ac6"
+  },
+  "mappingType": "explicit",
+  "input": [
+    "pasta"
+  ],
+  "synonyms": [
+    "スパゲッティ",
+    "スパゲティ",
+    "パスタ",
+    "ペンネ",
+    "すぱげてぃ",
+    "すぱげってぃ"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac3"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "寿司",
+    "鮨",
+    "すし"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "6268a01b5899f60be615cb66"
+  },
+  "input": [
+    "イタリアン"
+  ],
+  "mappingType": "explicit",
+  "synonyms": [
+    "スパゲッティ",
+    "パスタ"
+  ],
+  "date_inserted": {
+    "$date": "2022-04-27T01:44:59.057Z"
+  },
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac5"
+  },
+  "mappingType": "explicit",
+  "input": [
+    "中華"
+  ],
+  "synonyms": [
+    "　",
+    "麻婆豆腐",
+    "餃子",
+    "四川料理",
+    "上海料理"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac4"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "パイ",
+    "タルト"
+  ],
+  "editable": false
+}]
