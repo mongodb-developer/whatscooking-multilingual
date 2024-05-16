@@ -30,7 +30,11 @@ export const SearchParametersProvider = (props) => {
       { _id: '焼肉', count: 0 },
     ],
     th: [
-      { _id: 'TODO', count: 0 },
+      { _id: 'Thai', count: 0 },
+      { _id: 'Japanese', count: 0 },
+      { _id: 'Chinese', count: 0 },
+      { _id: 'Italian', count: 0 },
+      { _id: 'Indian', count: 0 },
     ],
     id: [
       { _id: 'Kopi', count: 0 },
@@ -74,7 +78,13 @@ export const SearchParametersProvider = (props) => {
       { _id: '豊島区', count: 0 },
     ],
     th: [
-      { _id: 'TODO', count: 0 },
+      { _id: 'Pathum Wan', count: 0 },
+      { _id: 'Chom Phon', count: 0 },
+      { _id: 'Khlong Toei', count: 0 },
+      { _id: 'Phra Nakhon', count: 0 },
+      { _id: 'Bang Rak', count: 0 },
+      { _id: 'Bueng Kum', count: 0 },
+      { _id: 'Khlong Tan', count: 0 },
     ],
     id: [
       { _id: 'Kebon Sirih', count: 0 },
@@ -139,9 +149,9 @@ export const SearchParametersProvider = (props) => {
           setLat(35.6586);
           break;
         case "th":
-          // Bangkok
-          setLng(100.5865);
-          setLat(13.7365);
+          // Bangkok - Silom Complex
+          setLng(100.5325628);
+          setLat(13.7282282);
           break;
         case "id":
           // Jakarta
