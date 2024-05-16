@@ -1,0 +1,18 @@
+{
+  "analyzer": "lucene.thai",
+  "searchAnalyzer": "lucene.thai",
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "location": [
+        {
+          "dynamic": true,
+          "type": "document"
+        },
+        {
+          "type": "geo"
+        }
+      ]
+    }
+  }
+}
