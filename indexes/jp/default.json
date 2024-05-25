@@ -18,7 +18,7 @@
   "synonyms": [
     {
       "analyzer": "lucene.japanese",
-      "name": "synonym_mapping",
+      "name": "MenuSynonyms",
       "source": {
         "collection": "menu_synonyms_jp"
       }

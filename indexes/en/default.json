@@ -16,7 +16,7 @@
   "synonyms": [
     {
       "analyzer": "lucene.standard",
-      "name": "synonym_mapping",
+      "name": "MenuSynonyms",
       "source": {
         "collection": "menu_synonyms_en"
       }
