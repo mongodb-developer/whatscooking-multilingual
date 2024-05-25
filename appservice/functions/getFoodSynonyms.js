@@ -8,7 +8,7 @@ exports = async function(payload, response) {
   // Querying a mongodb service:
   const collection = context.services.get("mongodb-atlas").db("whatscooking").collection('menu_synonyms_' + locale);
   
-  const foodSynonyms = await collection.find({'synonyms':synonyms}).toArray();
+  const foodSynonyms = await collection.find({}).toArray();
   
 
  return {foodSynonyms, ok:true};
