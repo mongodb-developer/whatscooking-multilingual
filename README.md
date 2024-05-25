@@ -193,7 +193,7 @@ response
 <h3>/synonyms/getFoodSynonyms</h3>
 command
 <pre>
-$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?synonyms=pasta&locale=en
+$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?locale=en
 
 </pre>
 
