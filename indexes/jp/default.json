@@ -14,5 +14,14 @@
         }
       ]
     }
-  }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.japanese",
+      "name": "synonym_mapping",
+      "source": {
+        "collection": "menu_synonyms_jp"
+      }
+    }
+  ]
 }

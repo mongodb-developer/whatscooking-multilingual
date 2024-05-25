@@ -14,5 +14,14 @@
         }
       ]
     }
-  }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.thai",
+      "name": "synonym_mapping",
+      "source": {
+        "collection": "menu_synonyms_th"
+      }
+    }
+  ]
 }
