@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "location": [
+        {
+          "dynamic": true,
+          "type": "document"
+        },
+        {
+          "type": "geo"
+        }
+      ]
+    }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.standard",
+      "name": "synonym_mapping",
+      "source": {
+        "collection": "menu_synonyms_en"
+      }
+    }
+  ]
+}
