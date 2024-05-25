@@ -75,7 +75,7 @@ const SynonymsPage = () => {
         ></img>
         <div className="flex flex-col w-full">
           <div className="my-auto text-4xl font-bold text-white text-center font-body">
-            Synonyms in Atlas Search
+            {t('SynonymsInAtlasSearch')}
           </div>
         </div>
       </div>
@@ -88,11 +88,11 @@ const SynonymsPage = () => {
 
           <div className="my-auto w-1/4 text-center">
             <div className="text-center text-3xl">
-              You say "pop," and I say "coke?"{" "}
+              {t('YouSayPop')}  
               <span className="text-6xl">🥤</span>
             </div>
             <div className="text-center text-2xl">
-              <br></br>With synonyms in Atlas Search, call it what you will.
+              <br></br>{t("CallItWhatYouWill")}
             </div>
 
             <button
@@ -103,7 +103,7 @@ const SynonymsPage = () => {
               //   setSubmissionMessage("");
               // }}
             >
-              <span className="my-auto">Our Custom Synonyms</span>
+              <span className="my-auto">{t('OurCustomSynonyms')}</span>
               <div className="flex items-center justify-center w-14 mt-2 h-14 text-6xl rounded-full bg-white">
                 🍽️
               </div>
@@ -142,7 +142,7 @@ const SynonymsPage = () => {
         <div className="flex mx-16 text-2xl justify-around">
           <div className="w-1/4 ml-10 rounded text-base p-4">
             <div className="text-2xl font-body text-center font-bold text-indigo-800 ">
-              Equivalent Synonym Document
+              {t('Equivalent')}
             </div>
 
             <div className="w-auto rounded text-base my-auto p-4">
@@ -154,7 +154,7 @@ const SynonymsPage = () => {
 
           <div className="w-1/4  rounded text-base p-4">
             <div className="text-2xl font-body text-center font-bold text-indigo-800 ">
-              Explicit Synonym Document
+              {t('Explicit')}
             </div>
 
             <div className="w-auto rounded text-base my-auto p-4">
@@ -170,7 +170,7 @@ const SynonymsPage = () => {
 
           <div className="w-1/4  rounded text-base px-4">
             <div className="text-2xl font-body text-center font-bold text-indigo-800 ">
-              Add to Search Index to Specify <br></br>Synonyms Source Collection
+              {t('AddToSearchIndex')}
             </div>
             <div className="w-auto rounded text-base my-auto px-4">
               <SyntaxHighlighter language="javascript" style={okaidia}>
