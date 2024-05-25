@@ -4,16 +4,6 @@
   "mappings": {
     "dynamic": true,
     "fields": {
-      "borough": {
-        "analyzer": "lucene.keyword",
-        "searchAnalyzer": "lucene.keyword",
-        "type": "string"
-      },
-      "cuisine": {
-        "analyzer": "lucene.keyword",
-        "searchAnalyzer": "lucene.keyword",
-        "type": "string"
-      },
       "location": [
         {
           "dynamic": true,
@@ -24,5 +14,14 @@
         }
       ]
     }
-  }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.indonesian",
+      "name": "MenuSynonyms",
+      "source": {
+        "collection": "menu_synonyms_id"
+      }
+    }
+  ]
 }

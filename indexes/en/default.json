@@ -12,5 +12,14 @@
         }
       ]
     }
-  }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.standard",
+      "name": "MenuSynonyms",
+      "source": {
+        "collection": "menu_synonyms_en"
+      }
+    }
+  ]
 }
