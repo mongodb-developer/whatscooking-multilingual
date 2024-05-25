@@ -1,9 +1,10 @@
 <h1 align="center">What's Cooking with Atlas Search</h1>
 
 <h2 align="center">A Restaurant Finder Application Demo MongoDB Atlas Search</h2>
-<p>Hello! 👋 This application allows you to search lightning fast through restaurants in Thai, Indonesian and Japanese based on a variety of search parameters and data types:</p>
+<p>Hello! 👋 This application allows you to search lightning fast through restaurants in English, Thai, Indonesian and Japanese based on a variety of search parameters and data types:</p>
 <ul>
 <li>restaurant name</li>
+<li>food name</li>
 <li>geolocation coordinates</li>
 <li>cuisine type</li>
 <li>average star rating</li>
@@ -14,9 +15,9 @@
 <img src="restaurantDemo.gif" width="450"  />
 </div>
 <br/>
-<p><em>Note: This dataset is mocked. Please do not use to make actual dining decisions.</em></p>
-<p><em>Note: This demo is multiligual version of the following repos.
-https://github.com/mongodb-developer/WhatsCooking/</em></p>
+<p><em>Note1: This dataset is mocked. Please do not use to make actual dining decisions.</em></p>
+<p><em>Note2: This demo is multiligual version of the <a href="https://github.com/mongodb-developer/WhatsCooking/">What's Cooking repos.
+</a></em></p>
 
 <p> What's Cooking implements many Atlas Search features from autocomplete to custom function scoring. Using the $search operator in a MongoDB aggregation pipeline, we can build fine-grained searches across text, numerics, and geospatial data. By building out What's Cooking, you'll learn all sorts of ways MongoDB allows you to build complex, fine-grained full-text searches on your Atlas data.</p>
 
@@ -51,7 +52,7 @@ https://github.com/mongodb-developer/WhatsCooking/</em></p>
 <h3>Prerequisites</h3>
 
 - A MongoDB Atlas account. Get one for free <a href="https://www.mongodb.com/cloud/atlas">here.</a>
-- A recent version of Node.js and npm.
+- Node.js version 16 and npm.
 - Restaurant sample dataset.
 - Synonyms dataset.
 - (Recommended) <a href="https://www.mongodb.com/try/download/compass">MongoDB Compass - GUI</a>
@@ -64,7 +65,7 @@ mongodb+srv://cooking:cooking@whatscooking.8u6sklg.mongodb.net/whatscooking
 </code>
 </pre>
 
-<p>It is also included in this repo's Supplemental Files branch as <pre>whatscooking.json</pre></p>
+<p>It is also included in this repo's <a href="https://github.com/mongodb-developer/whatscooking-multilingual/tree/main/data">data</a> and <a href="https://github.com/mongodb-developer/whatscooking-multilingual/tree/main/indexes">indexes</a> directory.</p>
 
 ---
 
@@ -81,7 +82,13 @@ mongodb+srv://cooking:cooking@whatscooking.8u6sklg.mongodb.net/whatscooking
 </li>
 
 <li> Create Search indexes. (Index definitions includes in <code>indexes</code> directory.)</li>
+<ul>
+<li>default</li>
+<li>autocomplete</li>
+<li>facetIndex</li>
+</ul>
 </ol>
+
 
 <h2> Deploy HTTPS Endpoints at your own env</h2>
 <ol>
@@ -104,22 +111,21 @@ Create following 3 HTTP endpoints</br>
 		</tr>
 		<tr>
 			<td>/restaurants/getRestaurantsAutocomplete</td>
-			<td>_backend_functions/getRestaurantsAutocomplete.js</td>
+			<td>appservice/functions/getRestaurantsAutocomplete.js</td>
 			<td>GET</td>
             <td>Enable</td>
             <td>JSON</td>
 		</tr>
 		<tr>
 			<td>/getRestaurants</td>
-			<td>_backend_functions/getRestaurants.js</td>
+			<td>appservice/functions/getRestaurants.js</td>
 			<td>POST</td>
             <td>Enable</td>
             <td>JSON</td>
 		</tr>
 		<tr>
 			<td>/restaurants/getFacets</td>
-			<td>_backend_functions
-/getFacets.js
+			<td>appservice/functions/getFacets.js
 </td>
 			<td>POST</td>
             <td>Enable</td>
@@ -127,7 +133,7 @@ Create following 3 HTTP endpoints</br>
 		</tr>
         <tr>
 			<td>/synonyms/getFoodSynonyms</td>
-			<td>_backend_functions/getFoodSynonyms.js</td>
+			<td>appservice/functions/getFoodSynonyms.js</td>
 			<td>POST</td>
             <td>Enable</td>
             <td>JSON</td>
@@ -187,18 +193,19 @@ response
 <h3>/synonyms/getFoodSynonyms</h3>
 command
 <pre>
-$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?synonyms=pasta&locale=en
+$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?locale=en
 
 </pre>
 
 response
 <pre>
+{"foodSynonyms":[{"_id":"6268a01b5899f60be615cb66","input":["noodles"],"mappingType":"explicit","synonyms":["lo mein","chow mein","pasta","udon","ramen","spaghetti","alphabetti","macaroni","pasta"],"date_inserted":"2022-04-27T01:44:59.057Z","editable":false}],"ok":true}
 </pre>
 
 <h2>To Run This Application....</h2>
 
 1. Clone the repo.
-2. Navigate inside `WhatsCooking` directory.
+2. Navigate inside `whatsCooking-multilingual` directory.
 3. Run <code>npm install</code> .
 4. Change HTTPS endpoint urls at <code>src/hooks/useHomeFetch.js</code> to your own ones.
 5. Change HTTPS endpoint urls at <code>src/compenents/SearchBar.js</code> to your own one.
@@ -242,8 +249,7 @@ response
     <img src="SynonymsFunction.png" width="550"  />
 </p>
 <hr>
-Find the Realm application and code for these webhooks in the <code>WhatsCookingRealm</code> folder.</p>
 
-<h5>If you have any questions or feedback about this repo, feel free to create an Issue or PR in this repo or reach out to me on Twitter @YouOldMaid.</h5>
+<h5>If you have any questions or feedback about this repo, feel free to create an Issue or PR in this repo.</h5>
 
 <h4>Also please join our online <a href="https://developer.mongodb.com/community/forums/">MongoDB Community</a> to interact with our product and engineering teams along with thousands of other MongoDB and Realm users. <br/><br/>Have fun and happy coding!</h4></h4>
