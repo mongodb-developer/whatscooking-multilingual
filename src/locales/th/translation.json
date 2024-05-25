@@ -11,5 +11,12 @@
     "functionScore": "Function Score",
     "synonyms": "Synonyms",
     "dataAndIndexes": "Data & Indexes",
-    "locale": "th"
+    "locale": "th",
+    "SynonymsInAtlasSearch": "Synonyms in Atlas Search",
+    "YouSayPop": "You say 'pop', and I say 'coke?'",
+    "CallItWhatYouWill": "With synonyms in Atlas Search, call it what you will.",
+    "OurCustomSynonyms": "Our Custom Synonyms",
+    "Equivalent": "Equivalent Synonym Document",
+    "Explicit": "Explicit Synonym Document",
+    "AddToSearchIndex": "Add to Search Index to Specify Synonyms Source Collection"
 }

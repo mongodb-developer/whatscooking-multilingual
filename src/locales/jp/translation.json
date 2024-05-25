@@ -11,5 +11,12 @@
     "functionScore": "ファンクションスコア",
     "synonyms": "類似語",
     "dataAndIndexes": "データとインデックス",
-    "locale": "jp"
+    "locale": "jp",
+    "SynonymsInAtlasSearch": "Atlas Search におけるシノニム",
+    "YouSayPop": "パスタで検索したときスパゲッティも表示したい",
+    "CallItWhatYouWill": "類義語の検索結果を一緒に表示できます",
+    "OurCustomSynonyms": "カスタムシノニム辞書",
+    "Equivalent": "Equivalent タイプのシノニムドキュメント",
+    "Explicit": "Explicit タイプのシノニムドキュメント",
+    "AddToSearchIndex": "検索インデックスでシノニムコレクションを指定するための追加設定"
 }
