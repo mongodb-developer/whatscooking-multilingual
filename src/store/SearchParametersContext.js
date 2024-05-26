@@ -125,6 +125,8 @@ export const SearchParametersProvider = (props) => {
   const [noResultsMsg, setNoResultsMsg] = useState("");
   const [cuisineBuckets, setCuisineBuckets] = useState(defaultCuisines["en"]);
   const [boroughBuckets, setBoroughBuckets] = useState(defaultBoroughs["en"]);
+  const [defaultCuisineBuckets, setDefaultCuisineBuckets] = useState(defaultCuisines["en"]);
+  const [defaultBoroughBuckets, setDefaultBoroughBuckets] = useState(defaultBoroughs["en"]);
   const [facetOverallCount, setFacetOverallCount] = useState(0);
   const [showFacets, setShowFacets] = useState(false);
   const [language, setLanguage] = useState('en');
@@ -167,6 +169,8 @@ export const SearchParametersProvider = (props) => {
     });
     setCuisineBuckets(defaultCuisines[language]);
     setBoroughBuckets(defaultBoroughs[language]);
+    setDefaultCuisineBuckets(defaultCuisines[language]);
+    setDefaultBoroughBuckets(defaultBoroughs[language]);
   }, [language]);
 
   const value = {
@@ -218,6 +222,10 @@ export const SearchParametersProvider = (props) => {
     setCuisineBuckets,
     boroughBuckets,
     setBoroughBuckets,
+    defaultCuisineBuckets,
+    setDefaultCuisineBuckets,
+    defaultBoroughBuckets,
+    setDefaultBoroughBuckets,
     setFacetOverallCount,
     facetOverallCount,
     showFacets,
