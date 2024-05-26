@@ -33,7 +33,7 @@
 - custom function scoring
 - synonyms
 
-<p>Check out the video of the MongoDB.Live keynote to see a demonstration of all the features or visit the link below to play around with the finished application, hosted entirely in MongoDB Atlas:</p>
+<p>Check out <a href="https://www.youtube.com/watch?v=s2kXYZRE7pA&t=512s">the demo video</a> to see a demonstration of all the features or visit the link below to play around with the finished application, hosted entirely in MongoDB Atlas:</p>
 <h2 align="center"><a href="https://whatscooking.mongosa.net/">whatscooking.mongosa.net</a></h2>
 
 <p>This application is hosted entirely by MongoDB Atlas was created using:</p>
@@ -61,7 +61,7 @@
 
 <pre>
   <code>
-mongodb+srv://cooking:cooking@whatscooking.8u6sklg.mongodb.net/whatscooking
+mongodb+srv://mongodb:atlassearch@whatscooking.8u6sklg.mongodb.net/whatscooking
 </code>
 </pre>
 
