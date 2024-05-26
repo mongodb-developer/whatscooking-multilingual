@@ -18,5 +18,16 @@
     "OurCustomSynonyms": "Our Custom Synonyms",
     "Equivalent": "Equivalent Synonym Document",
     "Explicit": "Explicit Synonym Document",
-    "AddToSearchIndex": "Add to Search Index to Specify Synonyms Source Collection"
+    "AddToSearchIndex": "Add to Search Index to Specify Synonyms Source Collection",
+    "languageAnalyzer": "lucene.standard",
+    "DefaultIndexDefinition": "Default Index Definition",
+    "AutocompleteIndexDefinition": "Autocomplete Index Definition",
+    "FacetIndexDefinition": "Facet Index Definition",
+    "data": "data",
+    "AtlasSearch": "Atlas Search",
+    "IndexPageStatement1": "combines the power of Apache Lucene with the developer productivity, scale, and resilience of MongoDB Atlas to integrate fast, relevance-based search capabilities into your MongoDB applications.",
+    "This": "This",
+    "WhatsCookingRestaurantFinder": "What's Cooking Restaurant Finder",
+    "IndexPageStatement2": "application uses 2 collections and only 3 Atlas Search indexes in Atlas.",
+    "IndexPageStatement3": "Create your own search indexes with the Visual Index Builder or use the ones below used in this application as examples."
 }

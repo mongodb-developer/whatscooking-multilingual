@@ -18,5 +18,16 @@
     "OurCustomSynonyms": "カスタムシノニム辞書",
     "Equivalent": "Equivalent タイプのシノニムドキュメント",
     "Explicit": "Explicit タイプのシノニムドキュメント",
-    "AddToSearchIndex": "検索インデックスでシノニムコレクションを指定するための追加設定"
+    "AddToSearchIndex": "検索インデックスでシノニムコレクションを指定するための追加設定",
+    "languageAnalyzer": "lucene.japanese",
+    "DefaultIndexDefinition": "キーワード検索の結果表示用インデックス定義",
+    "AutocompleteIndexDefinition": "オートコンプリート用インデックス定義",
+    "FacetIndexDefinition": "ファセット検索用インデックス定義",
+    "data": "データ",
+    "AtlasSearch": "Atlas 検索",
+    "IndexPageStatement1": "により、Apache LuceneとMongoDB Atlasの開発のしやすさ、スケーラビリティ、可用性を両立し、検索とDBクエリを兼ね備えたアプリケーションを簡単に構築できます。",
+    "This": "この",
+    "WhatsCookingRestaurantFinder": "What's Cooking レストラン検索",
+    "IndexPageStatement2": "アプリケーションは、2つのコレクションと3つの 検索インデックスのみでできています。",
+    "IndexPageStatement3": "ビジュアルエディタを利用して簡単に独自のインデックスを作成することが可能です。今回使用しているインデックスの内容は以下のとおりです。"
 }
