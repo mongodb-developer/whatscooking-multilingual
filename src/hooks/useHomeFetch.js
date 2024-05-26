@@ -3,12 +3,6 @@ import { useContext, useEffect } from "react";
 import { SearchParametersContext } from "../store/SearchParametersContext";
 import { useTranslation } from 'react-i18next';
 
-const { REACT_APP_GETRESTAURANTS_SECRET, REACT_APP_GETFACETS_SECRET } =
-  process.env;
-
-//const GetRestaurantsEndpoint = `https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/getRestaurants?secret=${REACT_APP_GETRESTAURANTS_SECRET}`;
-// const GetFacetsEndpoint = `https://us-east-1.aws.data.mongodb-api.com/app/whatscooking-agtge/endpoint/restaurants/getFacets?secret=${REACT_APP_GETFACETS_SECRET}`;
-
 const GetRestaurantsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/getRestaurants`;
 const GetFacetsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getFacets`;
 
@@ -44,6 +38,8 @@ export const useHomeFetch = () => {
     setCuisineBuckets,
     boroughBuckets,
     setBoroughBuckets,
+    defaultCuisineBuckets,
+    defaultBoroughBuckets,
     facetOverallCount,
     setFacetOverallCount,
     setShowFacets,
@@ -149,6 +145,8 @@ export const useHomeFetch = () => {
     setNoResultsMsg,
     cuisineBuckets,
     boroughBuckets,
+    defaultCuisineBuckets,
+    defaultBoroughBuckets,
     facetOverallCount,
   };
 };
