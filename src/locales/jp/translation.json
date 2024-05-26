@@ -9,7 +9,7 @@
     "geospatialSearchOptions": "地理空間検索オプション",
     "aggregation": "アグリゲーション",
     "functionScore": "ファンクションスコア",
-    "synonyms": "類似語",
+    "synonyms": "同義語",
     "dataAndIndexes": "データとインデックス",
     "locale": "jp",
     "SynonymsInAtlasSearch": "Atlas Search におけるシノニム",
