@@ -27,6 +27,8 @@ const SearchSideBar = ({
   facetOverallCount,
   showFacets,
   setShowFacetCode,
+  defaultCuisineBuckets,
+  defaultBoroughBuckets,
 }) => {
   const {
     showStars,
@@ -55,19 +57,61 @@ const SearchSideBar = ({
   const { t } = useTranslation();
 
   //------------------------CUISINE FACETS----------------------------------------------
+  const updatedCuisineBuckets = defaultCuisineBuckets.map(defaultCuisine => {
+      const matchedCuisine = cuisineBuckets.find(cuisine => cuisine._id === defaultCuisine._id);
+      return {
+          ...defaultCuisine,
+          count: matchedCuisine ? matchedCuisine.count : defaultCuisine.count
+      };
+  });
+
+  // Add the "Others" category if it doesn't exist in defaultCuisineBucket
+  let otherCuisineBucket = updatedCuisineBuckets.find(cuisine => cuisine._id === t("Other"));
+  if (!otherCuisineBucket) {
+      otherCuisineBucket = { "_id": t("Other"), "count": 0 };
+      updatedCuisineBuckets.push(otherCuisineBucket);
+  }
+
+  // Add counts from cuisineBuckets that don't match any defaultCuisineBucket
+  cuisineBuckets.forEach(cuisine => {
+      const isMatched = defaultCuisineBuckets.some(defaultCuisine => defaultCuisine._id === cuisine._id);
+      if (!isMatched) {
+          otherCuisineBucket.count += cuisine.count;
+      }
+  });
 
   let cuisines = {};
-
-  cuisineBuckets.forEach(cuisineBucket => {
-    cuisines[cuisineBucket._id] = cuisineBucket.count;
+  updatedCuisineBuckets.forEach(updatedCuisine => {
+    cuisines[updatedCuisine._id] = updatedCuisine.count
   });
 
   //------------------------BOROUGH FACETS----------------------------------------------
+  const updatedBoroughBuckets = defaultBoroughBuckets.map(defaultBorough => {
+      const matchedBorough = boroughBuckets.find(borough => borough._id === defaultBorough._id);
+      return {
+          ...defaultBorough,
+          count: matchedBorough ? matchedBorough.count : defaultBorough.count
+      };
+  });
+
+  // Add the "Others" category if it doesn't exist in defaultCuisineBucket
+  let otherBoroughBucket = updatedBoroughBuckets.find(borough => borough._id === t("Other"));
+  if (!otherBoroughBucket) {
+      otherBoroughBucket = { "_id": t("Other"), "count": 0 };
+      updatedBoroughBuckets.push(otherBoroughBucket);
+  }
+
+  // Add counts from cuisineBuckets that don't match any defaultCuisineBucket
+  boroughBuckets.forEach(borough => {
+      const isMatched = defaultBoroughBuckets.some(defaultBorough => defaultBorough._id === borough._id);
+      if (!isMatched) {
+          otherBoroughBucket.count += borough.count;
+      }
+  });
 
   let boroughs = {};
-
-  boroughBuckets.forEach(boroughBucket => {
-    boroughs[boroughBucket._id] = boroughBucket.count;
+  updatedBoroughBuckets.forEach(updatedBorough => {
+    boroughs[updatedBorough._id] = updatedBorough.count
   });
 
   const ratingChanged = (rating) => {

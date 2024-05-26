@@ -3,7 +3,7 @@
     "disclaimer": "このアプリはフェイクデータを利用しています。実際のレストラン検索に利用しないでください",
     "findButton": "検索",
     "restaurantTextPlaceHolder": "レストラン名",
-    "foodTextPlaceHolder": "食べ物",
+    "foodTextPlaceHolder": "メニュー名",
     "searchNoMatch": "レストランが見つかりませんでした。他のパラメータを試してみてください。",
     "averageStarRating": "平均スター数",
     "geospatialSearchOptions": "地理空間検索オプション",
@@ -29,5 +29,6 @@
     "This": "この",
     "WhatsCookingRestaurantFinder": "What's Cooking レストラン検索",
     "IndexPageStatement2": "アプリケーションは、2つのコレクションと3つの 検索インデックスのみでできています。",
-    "IndexPageStatement3": "ビジュアルエディタを利用して簡単に独自のインデックスを作成することが可能です。今回使用しているインデックスの内容は以下のとおりです。"
+    "IndexPageStatement3": "ビジュアルエディタを利用して簡単に独自のインデックスを作成することが可能です。今回使用しているインデックスの内容は以下のとおりです。",
+    "Other": "その他"
 }

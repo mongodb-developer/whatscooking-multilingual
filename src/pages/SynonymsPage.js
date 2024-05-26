@@ -19,7 +19,7 @@ const SynonymsPage = () => {
   const [deleteMessage, setDeleteMessage] = useState("");
   const [updateMessage, setUpdateMessage] = useState("");
   
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const getSynonyms = async () => {
     let storedSynonyms = await (
@@ -33,7 +33,7 @@ const SynonymsPage = () => {
   useEffect(() => {
     getSynonyms();
     console.log("GETTING SYNONYMS");
-  }, [deleteMessage, submissionMessage]); // add all external values your effect function depends on - none in this case
+  }, [deleteMessage, submissionMessage, i18n.language]); // add all external values your effect function depends on - none in this case
 
   const equivalentDocument = {
     mappingType: "equivalent",
