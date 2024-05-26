@@ -44,6 +44,8 @@ const MainPage = () => {
     boroughBuckets,
     cuisineBuckets,
     facetOverallCount,
+    defaultCuisineBuckets,
+    defaultBoroughBuckets,
   } = useHomeFetch();
 
   const {
@@ -149,7 +151,6 @@ const MainPage = () => {
             />
           </div>
         )}
-
         <div className="relative flex flex-col mx-auto">
           <div className="flex w-full px-10 mx-auto mt-4 bg-white">
             <SearchSideBar
@@ -176,6 +177,8 @@ const MainPage = () => {
               showFacets={showFacets}
               setShowFacets={setShowFacets}
               setShowFacetCode={setShowFacetCode}
+              defaultCuisineBuckets={defaultCuisineBuckets}
+              defaultBoroughBuckets={defaultBoroughBuckets}
             />
 
             <NYCMap
