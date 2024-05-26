@@ -43,9 +43,9 @@ const NYCMap = ({ restaurants, markerLongitude, markerLatitude }) => {
       zoom: zoom,
     });
 
-    //let marker = new mapboxgl.Marker({ color: "#c53030" })
-    //  .setLngLat([markerLongitude, markerLatitude])
-    //  .addTo(map);
+    let marker = new mapboxgl.Marker({ color: "#c53030" })
+      .setLngLat([markerLongitude, markerLatitude])
+      .addTo(map);
 
     if (!restaurants || restaurants.length === 0) {
       return;
