@@ -4,9 +4,14 @@
   "mappings": {
     "dynamic": false,
     "fields": {
-      "borough": {
-        "type": "stringFacet"
-      },
+      "borough": [
+        {
+          "type": "stringFacet"
+        },
+        {
+          "type": "string"
+        }
+      ],
       "cuisine": [
         {
           "type": "stringFacet"
@@ -16,8 +21,10 @@
         }
       ],
       "location": {
-        "indexShapes": true,
         "type": "geo"
+      },
+      "menu": {
+        "type": "string"
       },
       "name": {
         "type": "string"
@@ -26,5 +33,14 @@
         "type": "number"
       }
     }
-  }
+  },
+  "synonyms": [
+    {
+      "analyzer": "lucene.japanese",
+      "name": "MenuSynonyms",
+      "source": {
+        "collection": "menu_synonyms_jp"
+      }
+    }
+  ]
 }
