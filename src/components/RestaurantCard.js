@@ -1,5 +1,6 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
+import { useTranslation } from 'react-i18next';
 
 const RestaurantCard = ({
   name,
@@ -69,6 +70,75 @@ const RestaurantCard = ({
     case "Latin (Cuban, Dominican, Puerto Rican, South & Central American)":
       image = "🌶️";
       break;
+    case "イタリアン":
+      image = "🍝";
+      break;
+    case "カフェ":
+      image = "☕";
+      break;
+    case "フレンチ":
+      image = "🥖";
+      break;
+    case "ベーカリー":
+      image = "🧁";
+      break;
+    case "ラーメン":
+      image = "🍜";
+      break;
+    case "中華料理":
+      image = "🥟";
+      break;
+    case "寿司":
+      image = "🍣";
+      break;
+    case "居酒屋":
+      image = "🍶";
+      break;
+    case "焼肉":
+      image = "🍖";
+      break;
+    case "kopi":
+      image = "☕";
+      break;
+    case "Meksiko":
+      image = "🌶️";
+      break;
+    case "Cina":
+      image = "🥟";
+      break;
+    case "Es Krim":
+      image = "🍨";
+      break;
+    case "Perancis":
+      image = "🥖";
+      break;
+    case "Thailand":
+      image = "🇹🇭";
+      break;
+    case "Vietnam":
+      image = "🇻🇳";
+      break;
+    case "Italia":
+      image = "🍝";
+      break;
+    case "Korea":
+      image = "🇰🇷";
+      break;
+    case "Indonesia":
+      image = "🇮🇩";
+      break;
+    case "India":
+      image = "🍛";
+      break;
+    case "Japang":
+      image = "🍣";
+      break;
+    case "Amerika":
+      image = "🍔";
+      break;
+    case "Indian":
+      image = "🍛";
+      break;
     default:
       image = "🥗";
   }
@@ -78,13 +148,14 @@ const RestaurantCard = ({
   for (let i = 0; i < priceValue; i++) {
     dollars.push(i);
   }
+  const { t } = useTranslation();
 
   return (
     <>
       <div className="relative flex flex-col justify-around w-full px-4 py-3 mb-10 text-center transition duration-500 transform bg-white border rounded-lg shadow-lg hover:scale-110">
         {source === "TopPicks" ? (
           <div className="absolute px-2 mx-auto text-xl font-bold text-white rounded-full shadow-lg hover:scale-150 bg-gradient-to-r from-mongo-700 to-mongo-600 -top-4">
-            score: {modScore}
+            {t("score")} {modScore}
           </div>
         ) : (
           <div className="absolute px-2 mx-auto text-xl font-bold text-white  rounded-full shadow-lg hover:scale-150 bg-gradient-to-r from-red-700 to-red-600 -top-4">
@@ -103,7 +174,7 @@ const RestaurantCard = ({
           }}
           className="absolute right-0 px-2 mx-auto text-lg bg-white border rounded shadow-lg -bottom-4 font-body border-mongo"
         >
-          Show Menu 👓
+          {t('showMenu')} 👓
         </div>
 
         <div className="pt-1 mb-1 text-lg font-bold">{name}</div>
@@ -126,6 +197,7 @@ const RestaurantCard = ({
               isHalf={true}
               value={starValue}
             />
+          <h2 className="text-sm">{starValue}</h2>
           </div>
           <div className="flex justify-center">
             {dollars.map((dollar, idx) => (

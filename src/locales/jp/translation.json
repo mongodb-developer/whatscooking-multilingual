@@ -30,5 +30,7 @@
     "WhatsCookingRestaurantFinder": "What's Cooking レストラン検索",
     "IndexPageStatement2": "アプリケーションは、2つのコレクションと3つの 検索インデックスのみでできています。",
     "IndexPageStatement3": "ビジュアルエディタを利用して簡単に独自のインデックスを作成することが可能です。今回使用しているインデックスの内容は以下のとおりです。",
-    "Other": "その他"
+    "Other": "その他",
+    "score": "検索スコア:",
+    "showMenu": "メニューをみる"
 }

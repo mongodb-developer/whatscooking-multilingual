@@ -30,6 +30,7 @@
     "WhatsCookingRestaurantFinder": "What's Cooking Restaurant Finder",
     "IndexPageStatement2": "application uses 2 collections and only 3 Atlas Search indexes in Atlas.",
     "IndexPageStatement3": "Create your own search indexes with the Visual Index Builder or use the ones below used in this application as examples.",
-    "Other": "Other"
-
+    "Other": "Other",
+    "score": "score:",
+    "showMenu": "Show Menu"
 }
