@@ -4,8 +4,21 @@
   },
   "mappingType": "equivalent",
   "synonyms": [
-    "shawarma",
-    "gyros"
+    "mie",
+    "mi",
+    "bakmie",
+    "bakmi"
+  ],
+  "editable": false
+},
+{
+  "_id": {
+    "$oid": "613b4ad34053fed8281c1ac5"
+  },
+  "mappingType": "equivalent",
+  "synonyms": [
+    "bakso",
+    "baso"
   ],
   "editable": false
 },
@@ -33,19 +46,15 @@
     "$oid": "6268a01b5899f60be615cb66"
   },
   "input": [
-    "noodles"
+    "mie"
   ],
   "mappingType": "explicit",
   "synonyms": [
-    "lo mein",
+    "ramen",
     "chow mein",
     "pasta",
     "udon",
-    "ramen",
-    "spaghetti",
-    "alphabetti",
-    "macaroni",
-    "pasta"
+    "mie goreng"
   ],
   "date_inserted": {
     "$date": "2022-04-27T01:44:59.057Z"
@@ -58,9 +67,8 @@
   },
   "mappingType": "equivalent",
   "synonyms": [
-    "pie",
-    "tart",
-    "cobbler"
+    "satay",
+    "sate"
   ],
   "editable": false
 },
@@ -87,24 +95,6 @@
     "lasagna",
     "lasagne",
     "manicotti"
-  ],
-  "editable": false
-},
-{
-  "_id": {
-    "$oid": "613b4ad34053fed8281c1ac5"
-  },
-  "mappingType": "explicit",
-  "input": [
-    "dumpling"
-  ],
-  "synonyms": [
-    "won ton",
-    "wonton",
-    "matzo ball",
-    "gnocchi",
-    "matzah ball",
-    "pierogi"
   ],
   "editable": false
 }]
