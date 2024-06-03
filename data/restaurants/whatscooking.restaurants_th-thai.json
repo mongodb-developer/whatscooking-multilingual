@@ -1,0 +1,4282 @@
+[{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cda9e"
+  },
+  "address": {
+    "building": "45/12",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.492384,
+        13.739533
+      ]
+    },
+    "street": "สุขุมวิท",
+    "zipcode": "10110"
+  },
+  "borough": "คลองเตย",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารไทยมงคล",
+  "restaurant_id": "41704620",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.492384,
+      13.739533
+    ]
+  },
+  "stars": 4.1,
+  "review_count": 832,
+  "menu": [
+    "ผัดไทย",
+    "แกงเขียวหวาน",
+    "ต้มยำกุ้ง",
+    "สเต็กเนื้อ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cda9f"
+  },
+  "address": {
+    "building": "28",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.517387,
+        13.744753
+      ]
+    },
+    "street": "สุขุมวิท 24",
+    "zipcode": "10110"
+  },
+  "borough": "คลองตัน",
+  "cuisine": "Japanese",
+  "name": "Sushi Niwa",
+  "restaurant_id": "40976900",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.517387,
+      13.744753
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 1328,
+  "menu": [
+    "Sashimi Platter",
+    "Yakisoba",
+    "Miso Soup",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa0"
+  },
+  "address": {
+    "building": "123/45",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.564055,
+        13.725424
+      ]
+    },
+    "street": "สยามสแควร์ ซอย 5",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารจีนฮวงจุ้ย",
+  "restaurant_id": "41298429",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.564055,
+      13.725424
+    ]
+  },
+  "stars": 3.8,
+  "review_count": 967,
+  "menu": [
+    "เก๋าเกย",
+    "ขนมจีบ",
+    "ข้าวผัดจีน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa1"
+  },
+  "address": {
+    "building": "67/3",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.493984,
+        13.737241
+      ]
+    },
+    "street": "สุขุมวิท ซอย 3",
+    "zipcode": "10110"
+  },
+  "borough": "คลองเตย",
+  "cuisine": "Thai",
+  "name": "ครัวคุณยาย",
+  "restaurant_id": "41363030",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.493984,
+      13.737241
+    ]
+  },
+  "stars": 4.2,
+  "review_count": 1127,
+  "menu": [
+    "ส้มตำปูปลาร้า",
+    "หมูกระทะ",
+    "แกงเผ็ดเป็ดย่าง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa2"
+  },
+  "address": {
+    "building": "18",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.548273,
+        13.741412
+      ]
+    },
+    "street": "สามเสน",
+    "zipcode": "10300"
+  },
+  "borough": "พระนคร",
+  "cuisine": "Italian",
+  "name": "Piccola Italia",
+  "restaurant_id": "40382039",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.548273,
+      13.741412
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 527,
+  "menu": [
+    "Margherita Pizza",
+    "Spaghetti Carbonara",
+    "Lasagna"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa3"
+  },
+  "address": {
+    "building": "390",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.530365,
+        13.723951
+      ]
+    },
+    "street": "ถนนสีลม",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านข้าวแกงชาววัง",
+  "restaurant_id": "40392049",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.530365,
+      13.723951
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 2132,
+  "menu": [
+    "แกงเขียวหวานไก่",
+    "ผัดหมี่ถั่วงอก",
+    "ต้มยำกุ้ง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa4"
+  },
+  "address": {
+    "building": "24/6",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.561583,
+        13.730318
+      ]
+    },
+    "street": "ถนนราชดำริ",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Japanese",
+  "name": "Kizuna Sushi Bar",
+  "restaurant_id": "40382909",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.561583,
+      13.730318
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 921,
+  "menu": [
+    "Salmon Sashimi",
+    "Tuna Tataki",
+    "Ebi Tempura Roll"
+  ],
+  "PriceRange": 5
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa5"
+  },
+  "address": {
+    "building": "126/2",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.546051,
+        13.755382
+      ]
+    },
+    "street": "พหลโยธินซอย 7",
+    "zipcode": "10400"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Thai",
+  "name": "บ้านครัวแกงใต้",
+  "restaurant_id": "40862669",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.546051,
+      13.755382
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 2587,
+  "menu": [
+    "แกงเผ็ดเป็ดย่าง",
+    "หมูสามชั้นผัดพริกเผา",
+    "ต้มยำรวมมิตร"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa6"
+  },
+  "address": {
+    "building": "88",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.556047,
+        13.727806
+      ]
+    },
+    "street": "ถนนราชดำริ",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Japanese",
+  "name": "Izakaya Goku",
+  "restaurant_id": "41298469",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.556047,
+      13.727806
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 1021,
+  "menu": [
+    "Yakitori Platter",
+    "Takoyaki",
+    "Salmon Sashimi"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa7"
+  },
+  "address": {
+    "building": "365",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.558407,
+        13.751518
+      ]
+    },
+    "street": "ถนนพหลโยธิน",
+    "zipcode": "10400"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารจีนฮอกเกี้ยน",
+  "restaurant_id": "41193519",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.558407,
+      13.751518
+    ]
+  },
+  "stars": 4.2,
+  "review_count": 1647,
+  "menu": [
+    "เป็ดปักกิ่ง",
+    "ขนมจีบไส้กุ้ง",
+    "ผัดคะน้ากุ้งสด"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa8"
+  },
+  "address": {
+    "building": "22/8",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.528393,
+        13.751278
+      ]
+    },
+    "street": "ซอยพหลโยธิน 7",
+    "zipcode": "10400"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Thai",
+  "name": "สุกี้ริมทางจ๊ะเอ๋ย",
+  "restaurant_id": "40772011",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.528393,
+      13.751278
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 2235,
+  "menu": [
+    "สุกี้รวมมิตร",
+    "ก๋วยเตี๋ยวราดหน้า",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "6645bf33cc9c1eaef00cdaa9"
+  },
+  "address": {
+    "building": "312/5",
+    "coord": {
+      "type": "Point",
+      "coordinates": [
+        100.577316,
+        13.761678
+      ]
+    },
+    "street": "ถนนนวมินทร์",
+    "zipcode": "10230"
+  },
+  "borough": "บึงกุ่ม",
+  "cuisine": "Indian",
+  "name": "Delhi Curry House",
+  "restaurant_id": "41196127",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.577316,
+      13.761678
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 987,
+  "menu": [
+    "Chicken Tikka Masala",
+    "Garlic Naan",
+    "Vegetable Samosa"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d5d"
+  },
+  "address": {
+    "building": "123",
+    "coord": [
+      100.523186,
+      13.736717
+    ],
+    "street": "Sukhumvit Road",
+    "zipcode": "10110"
+  },
+  "borough": "คลองเตย",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารไทยอร่อย",
+  "restaurant_id": "TH001",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.523186,
+      13.736717
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 120,
+  "menu": [
+    "ผัดไทย",
+    "ส้มตำ",
+    "ต้มยำกุ้ง",
+    "ข้าวผัด",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d5e"
+  },
+  "address": {
+    "building": "456",
+    "coord": [
+      100.521654,
+      13.728987
+    ],
+    "street": "Rama IV Road",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารแกงเขียวหวาน",
+  "restaurant_id": "TH002",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.521654,
+      13.728987
+    ]
+  },
+  "stars": 4,
+  "review_count": 98,
+  "menu": [
+    "แกงเขียวหวาน",
+    "แกงมัสมั่น",
+    "แกงพะแนง",
+    "แกงเหลือง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d5f"
+  },
+  "address": {
+    "building": "321",
+    "coord": [
+      100.537295,
+      13.752285
+    ],
+    "street": "Sathorn Road",
+    "zipcode": "10120"
+  },
+  "borough": "สาธร",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดไท",
+  "restaurant_id": "TH003",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.537295,
+      13.752285
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 200,
+  "menu": [
+    "ผัดไทย",
+    "ต้มยำ",
+    "ส้มตำ",
+    "ข้าวเหนียวมะม่วง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d60"
+  },
+  "address": {
+    "building": "654",
+    "coord": [
+      100.511042,
+      13.744599
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารต้มยำกุ้ง",
+  "restaurant_id": "TH004",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.511042,
+      13.744599
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 95,
+  "menu": [
+    "ต้มยำกุ้ง",
+    "ผัดซีอิ๊ว",
+    "ชาไทย",
+    "ปอเปี๊ยะ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d61"
+  },
+  "address": {
+    "building": "789",
+    "coord": [
+      100.540925,
+      13.750031
+    ],
+    "street": "Silom Road",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Sushi Delight",
+  "restaurant_id": "JP001",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.540925,
+      13.750031
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 150,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Ramen",
+    "Udon"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d62"
+  },
+  "address": {
+    "building": "321",
+    "coord": [
+      100.537295,
+      13.752285
+    ],
+    "street": "Sathorn Road",
+    "zipcode": "10120"
+  },
+  "borough": "สาธร",
+  "cuisine": "Japanese",
+  "name": "Ramen House",
+  "restaurant_id": "JP002",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.537295,
+      13.752285
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 80,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Karaage",
+    "Donburi"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d63"
+  },
+  "address": {
+    "building": "123",
+    "coord": [
+      100.558367,
+      13.727023
+    ],
+    "street": "Lat Phrao Road",
+    "zipcode": "10310"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Japanese",
+  "name": "Tempura Heaven",
+  "restaurant_id": "JP003",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.558367,
+      13.727023
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 105,
+  "menu": [
+    "Tempura",
+    "Miso Soup",
+    "Sashimi",
+    "Tonkatsu"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d64"
+  },
+  "address": {
+    "building": "654",
+    "coord": [
+      100.511042,
+      13.744599
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารจีนเสี่ยวหลงเปา",
+  "restaurant_id": "CH001",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.511042,
+      13.744599
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 134,
+  "menu": [
+    "เสี่ยวหลงเปา",
+    "หมูเปรี้ยวหวาน",
+    "ไก่ผัดเม็ดมะม่วง",
+    "ข้าวผัด"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d65"
+  },
+  "address": {
+    "building": "987",
+    "coord": [
+      100.505831,
+      13.741251
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมั่นโถว",
+  "restaurant_id": "CH002",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.505831,
+      13.741251
+    ]
+  },
+  "stars": 4.2,
+  "review_count": 85,
+  "menu": [
+    "หมั่นโถว",
+    "เป็ดปักกิ่ง",
+    "หมูผัดเต้าหู้เสฉวน",
+    "บะหมี่ผัด"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d66"
+  },
+  "address": {
+    "building": "321",
+    "coord": [
+      100.579021,
+      13.745002
+    ],
+    "street": "Ratchadaphisek Road",
+    "zipcode": "10400"
+  },
+  "borough": "ดินแดง",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารติ่มซำ",
+  "restaurant_id": "CH003",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.579021,
+      13.745002
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 110,
+  "menu": [
+    "ติ่มซำ",
+    "ซุปเสฉวน",
+    "หมี่ผัดฮ่องกง",
+    "ปอเปี๊ยะ"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d67"
+  },
+  "address": {
+    "building": "567",
+    "coord": [
+      100.536,
+      13.7553
+    ],
+    "street": "Wireless Road",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารกุ้งอบวุ้นเส้น",
+  "restaurant_id": "TH005",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.536,
+      13.7553
+    ]
+  },
+  "stars": 4.2,
+  "review_count": 123,
+  "menu": [
+    "กุ้งอบวุ้นเส้น",
+    "ข้าวผัดปู",
+    "ต้มยำไก่บ้าน",
+    "น้ำพริกอ่อง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d68"
+  },
+  "address": {
+    "building": "890",
+    "coord": [
+      100.512456,
+      13.746589
+    ],
+    "street": "Charoen Krung Road",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวซอย",
+  "restaurant_id": "TH006",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.512456,
+      13.746589
+    ]
+  },
+  "stars": 4.1,
+  "review_count": 89,
+  "menu": [
+    "ข้าวซอย",
+    "แกงไตปลา",
+    "น้ำพริกหนุ่ม",
+    "ผัดกระเพรา"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d69"
+  },
+  "address": {
+    "building": "111",
+    "coord": [
+      100.530123,
+      13.734567
+    ],
+    "street": "Phahonyothin Road",
+    "zipcode": "10900"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารหมูกรอบ",
+  "restaurant_id": "TH007",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.530123,
+      13.734567
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 142,
+  "menu": [
+    "หมูกรอบ",
+    "แกงส้ม",
+    "ยำวุ้นเส้น",
+    "ผัดไทยกุ้งสด"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6a"
+  },
+  "address": {
+    "building": "222",
+    "coord": [
+      100.514321,
+      13.733421
+    ],
+    "street": "Si Ayutthaya Road",
+    "zipcode": "10400"
+  },
+  "borough": "ราชเทวี",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดเผ็ด",
+  "restaurant_id": "TH008",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.514321,
+      13.733421
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 156,
+  "menu": [
+    "ผัดเผ็ด",
+    "ข้าวผัดกระเพรา",
+    "ต้มยำปลา",
+    "ขนมจีนน้ำยา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6b"
+  },
+  "address": {
+    "building": "333",
+    "coord": [
+      100.537654,
+      13.737654
+    ],
+    "street": "Sukhumvit Road",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Sushi Paradise",
+  "restaurant_id": "JP004",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.537654,
+      13.737654
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 178,
+  "menu": [
+    "Sushi",
+    "Maki",
+    "Tempura",
+    "Donburi",
+    "Udon",
+    "Miso Soup"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6c"
+  },
+  "address": {
+    "building": "444",
+    "coord": [
+      100.546789,
+      13.759876
+    ],
+    "street": "Sathorn Road",
+    "zipcode": "10120"
+  },
+  "borough": "สาธร",
+  "cuisine": "Japanese",
+  "name": "Katsu King",
+  "restaurant_id": "JP005",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.546789,
+      13.759876
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 92,
+  "menu": [
+    "Katsu Don",
+    "Karaage",
+    "Ramen",
+    "Sashimi",
+    "Miso Soup"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6d"
+  },
+  "address": {
+    "building": "555",
+    "coord": [
+      100.549876,
+      13.755432
+    ],
+    "street": "Silom Road",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Ramen Tokyo",
+  "restaurant_id": "JP006",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.549876,
+      13.755432
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 105,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Tempura",
+    "Sashimi"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6e"
+  },
+  "address": {
+    "building": "666",
+    "coord": [
+      100.506543,
+      13.741234
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมี่เกี๊ยว",
+  "restaurant_id": "CH004",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.506543,
+      13.741234
+    ]
+  },
+  "stars": 4.1,
+  "review_count": 97,
+  "menu": [
+    "หมี่เกี๊ยว",
+    "เป็ดย่าง",
+    "หมูแดง",
+    "ผัดโหงวก๊วย"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d6f"
+  },
+  "address": {
+    "building": "777",
+    "coord": [
+      100.509876,
+      13.74321
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารไก่ผัดพริก",
+  "restaurant_id": "CH005",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.509876,
+      13.74321
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 115,
+  "menu": [
+    "ไก่ผัดพริก",
+    "ข้าวผัดหมู",
+    "ปลาหมึกนึ่งมะนาว",
+    "หมี่ผัดกระเพรา"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665558acb0d0b4816f163d70"
+  },
+  "address": {
+    "building": "888",
+    "coord": [
+      100.512987,
+      13.745654
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารปูผัดผงกะหรี่",
+  "restaurant_id": "CH006",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.512987,
+      13.745654
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 123,
+  "menu": [
+    "ปูผัดผงกะหรี่",
+    "ข้าวผัดปู",
+    "ปลานึ่งซีอิ๊ว",
+    "ผัดหมี่"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d71"
+  },
+  "address": {
+    "building": "101",
+    "coord": [
+      100.515678,
+      13.751234
+    ],
+    "street": "Soi Langsuan",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวแกง",
+  "restaurant_id": "TH013",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.515678,
+      13.751234
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 200,
+  "menu": [
+    "ข้าวแกง",
+    "แกงเขียวหวาน",
+    "ผัดพริกแกง",
+    "ไก่ผัดเม็ดมะม่วง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d72"
+  },
+  "address": {
+    "building": "202",
+    "coord": [
+      100.525789,
+      13.734567
+    ],
+    "street": "Rama I Road",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารก๋วยเตี๋ยวเรือ",
+  "restaurant_id": "TH014",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.525789,
+      13.734567
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 150,
+  "menu": [
+    "ก๋วยเตี๋ยวเรือ",
+    "ส้มตำ",
+    "หมูสะเต๊ะ",
+    "ข้าวเหนียวมะม่วง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d73"
+  },
+  "address": {
+    "building": "303",
+    "coord": [
+      100.538912,
+      13.754321
+    ],
+    "street": "Chitlom Road",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวเหนียวหมูปิ้ง",
+  "restaurant_id": "TH015",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.538912,
+      13.754321
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 130,
+  "menu": [
+    "ข้าวเหนียวหมูปิ้ง",
+    "น้ำตกหมู",
+    "ต้มแซ่บหมู",
+    "แกงไตปลา"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d74"
+  },
+  "address": {
+    "building": "404",
+    "coord": [
+      100.544321,
+      13.760123
+    ],
+    "street": "Phloen Chit Road",
+    "zipcode": "10330"
+  },
+  "borough": "ปทุมวัน",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารต้มยำกุ้ง",
+  "restaurant_id": "TH016",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.544321,
+      13.760123
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 180,
+  "menu": [
+    "ต้มยำกุ้ง",
+    "ผัดกระเพรา",
+    "แกงเขียวหวาน",
+    "ส้มตำปูปลาร้า"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d75"
+  },
+  "address": {
+    "building": "505",
+    "coord": [
+      100.530456,
+      13.732567
+    ],
+    "street": "Phahonyothin Road",
+    "zipcode": "10900"
+  },
+  "borough": "จตุจักร",
+  "cuisine": "Japanese",
+  "name": "Sushi Delight",
+  "restaurant_id": "JP010",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.530456,
+      13.732567
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 190,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Sashimi",
+    "Ramen",
+    "Miso Soup"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d76"
+  },
+  "address": {
+    "building": "606",
+    "coord": [
+      100.545678,
+      13.741234
+    ],
+    "street": "Sathorn Tai Road",
+    "zipcode": "10120"
+  },
+  "borough": "สาธร",
+  "cuisine": "Japanese",
+  "name": "Kobe Steakhouse",
+  "restaurant_id": "JP011",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.545678,
+      13.741234
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 175,
+  "menu": [
+    "Steak",
+    "Sushi",
+    "Karaage",
+    "Tempura"
+  ],
+  "PriceRange": 5
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d77"
+  },
+  "address": {
+    "building": "707",
+    "coord": [
+      100.55789,
+      13.742123
+    ],
+    "street": "Narathiwat Road",
+    "zipcode": "10120"
+  },
+  "borough": "สาธร",
+  "cuisine": "Japanese",
+  "name": "Osaka Ramen",
+  "restaurant_id": "JP012",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.55789,
+      13.742123
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 140,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Takoyaki",
+    "Sashimi"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d78"
+  },
+  "address": {
+    "building": "808",
+    "coord": [
+      100.516543,
+      13.73321
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารห่านย่าง",
+  "restaurant_id": "CH010",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.516543,
+      13.73321
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 155,
+  "menu": [
+    "ห่านย่าง",
+    "หมูกรอบ",
+    "ข้าวผัดปู",
+    "เกี๊ยวน้ำ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d79"
+  },
+  "address": {
+    "building": "909",
+    "coord": [
+      100.512987,
+      13.731876
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเต้าหู้เห็ดหอม",
+  "restaurant_id": "CH011",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.512987,
+      13.731876
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 130,
+  "menu": [
+    "เต้าหู้เห็ดหอม",
+    "เป็ดย่าง",
+    "หมูแดงทอด",
+    "ผัดหมี่"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555987b0d0b4816f163d7a"
+  },
+  "address": {
+    "building": "111",
+    "coord": [
+      100.509876,
+      13.738765
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารข้าวมันไก่",
+  "restaurant_id": "CH012",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.509876,
+      13.738765
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 140,
+  "menu": [
+    "ข้าวมันไก่",
+    "ไก่ผัดพริก",
+    "เต้าหู้ทอด",
+    "ซุปกระดูกหมู"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d7b"
+  },
+  "address": {
+    "building": "101",
+    "coord": [
+      100.518678,
+      13.753124
+    ],
+    "street": "Soi Thong Lo",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดไทย",
+  "restaurant_id": "TH017",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.518678,
+      13.753124
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 210,
+  "menu": [
+    "ผัดไทย",
+    "กุ้งอบวุ้นเส้น",
+    "ข้าวผัดปู",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d7c"
+  },
+  "address": {
+    "building": "102",
+    "coord": [
+      100.524567,
+      13.756789
+    ],
+    "street": "Soi Ekkamai",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารต้มแซ่บ",
+  "restaurant_id": "TH018",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.524567,
+      13.756789
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 170,
+  "menu": [
+    "ต้มแซ่บ",
+    "แกงส้ม",
+    "ข้าวซอย",
+    "หมูกรอบทอด"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d7d"
+  },
+  "address": {
+    "building": "103",
+    "coord": [
+      100.533456,
+      13.763456
+    ],
+    "street": "Soi Sukhumvit 39",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารกะเพรา",
+  "restaurant_id": "TH019",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.533456,
+      13.763456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 180,
+  "menu": [
+    "กะเพราหมู",
+    "ผัดกระเพราไก่",
+    "ข้าวผัดทะเล",
+    "แกงจืดเต้าหู้หมูสับ"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d7e"
+  },
+  "address": {
+    "building": "104",
+    "coord": [
+      100.542345,
+      13.765432
+    ],
+    "street": "Soi Asoke",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารหมูย่าง",
+  "restaurant_id": "TH020",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.542345,
+      13.765432
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 220,
+  "menu": [
+    "หมูย่าง",
+    "ส้มตำ",
+    "ต้มยำกุ้ง",
+    "แกงมัสมั่นไก่"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d7f"
+  },
+  "address": {
+    "building": "105",
+    "coord": [
+      100.514678,
+      13.760987
+    ],
+    "street": "Soi Pridi Banomyong",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Yoshi Sushi",
+  "restaurant_id": "JP013",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.514678,
+      13.760987
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 190,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Sashimi",
+    "Ramen"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d80"
+  },
+  "address": {
+    "building": "106",
+    "coord": [
+      100.523789,
+      13.764321
+    ],
+    "street": "Soi Thong Lo",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Samurai Ramen",
+  "restaurant_id": "JP014",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.523789,
+      13.764321
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 160,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Karaage",
+    "Miso Soup"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d81"
+  },
+  "address": {
+    "building": "107",
+    "coord": [
+      100.532456,
+      13.772345
+    ],
+    "street": "Soi Sukhumvit 49",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Tokyo Grill",
+  "restaurant_id": "JP015",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.532456,
+      13.772345
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 180,
+  "menu": [
+    "Grilled Meat",
+    "Sushi",
+    "Tempura",
+    "Sashimi"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d82"
+  },
+  "address": {
+    "building": "108",
+    "coord": [
+      100.542123,
+      13.773567
+    ],
+    "street": "Soi Phrom Phong",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Kyoto Sushi",
+  "restaurant_id": "JP016",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.542123,
+      13.773567
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 140,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Udon",
+    "Sashimi"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d83"
+  },
+  "address": {
+    "building": "109",
+    "coord": [
+      100.512345,
+      13.730987
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูแดง",
+  "restaurant_id": "CH013",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.512345,
+      13.730987
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 190,
+  "menu": [
+    "หมูแดง",
+    "เป็ดย่าง",
+    "บะหมี่เกี๊ยว",
+    "ข้าวผัดหมู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d84"
+  },
+  "address": {
+    "building": "110",
+    "coord": [
+      100.518765,
+      13.733456
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเป็ดย่าง",
+  "restaurant_id": "CH014",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.518765,
+      13.733456
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 170,
+  "menu": [
+    "เป็ดย่าง",
+    "หมูกรอบ",
+    "ข้าวหมูแดง",
+    "ผัดผักบุ้ง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d85"
+  },
+  "address": {
+    "building": "111",
+    "coord": [
+      100.521234,
+      13.736789
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารก๋วยเตี๋ยว",
+  "restaurant_id": "CH015",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.521234,
+      13.736789
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 160,
+  "menu": [
+    "ก๋วยเตี๋ยว",
+    "เกี๊ยวทอด",
+    "บะหมี่แห้ง",
+    "ข้าวมันไก่"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d86"
+  },
+  "address": {
+    "building": "112",
+    "coord": [
+      100.516789,
+      13.738765
+    ],
+    "street": "Yaowarat Road",
+    "zipcode": "10100"
+  },
+  "borough": "สัมพันธวงศ์",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารติ่มซำ",
+  "restaurant_id": "CH016",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.516789,
+      13.738765
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 180,
+  "menu": [
+    "ติ่มซำ",
+    "ซาลาเปา",
+    "ฮะเก๋า",
+    "กุ้งนึ่ง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d87"
+  },
+  "address": {
+    "building": "113",
+    "coord": [
+      100.514321,
+      13.732345
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวซอย",
+  "restaurant_id": "TH021",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.514321,
+      13.732345
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 150,
+  "menu": [
+    "ข้าวซอย",
+    "แกงเขียวหวาน",
+    "ไก่ทอด",
+    "หมูย่าง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d88"
+  },
+  "address": {
+    "building": "114",
+    "coord": [
+      100.528765,
+      13.730876
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารแกงส้ม",
+  "restaurant_id": "TH022",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.528765,
+      13.730876
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 140,
+  "menu": [
+    "แกงส้ม",
+    "ต้มแซ่บ",
+    "กุ้งอบวุ้นเส้น",
+    "ส้มตำไทย"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d89"
+  },
+  "address": {
+    "building": "115",
+    "coord": [
+      100.526543,
+      13.728765
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดพริกแกง",
+  "restaurant_id": "TH023",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.526543,
+      13.728765
+    ]
+  },
+  "stars": 4.3,
+  "review_count": 130,
+  "menu": [
+    "ผัดพริกแกง",
+    "ต้มยำ",
+    "ข้าวผัดทะเล",
+    "ไก่ผัดเม็ดมะม่วง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d8a"
+  },
+  "address": {
+    "building": "116",
+    "coord": [
+      100.538765,
+      13.726543
+    ],
+    "street": "Soi Pradit Manutham",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารยำวุ้นเส้น",
+  "restaurant_id": "TH024",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.538765,
+      13.726543
+    ]
+  },
+  "stars": 4.2,
+  "review_count": 120,
+  "menu": [
+    "ยำวุ้นเส้น",
+    "หมูกรอบ",
+    "ต้มยำทะเล",
+    "ข้าวเหนียวหมูปิ้ง"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d8b"
+  },
+  "address": {
+    "building": "117",
+    "coord": [
+      100.542345,
+      13.728765
+    ],
+    "street": "Soi Pradit Manutham",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Sakura Sushi",
+  "restaurant_id": "JP017",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.542345,
+      13.728765
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 160,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Udon",
+    "Sashimi"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d8c"
+  },
+  "address": {
+    "building": "118",
+    "coord": [
+      100.535678,
+      13.732345
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Osaka Sushi",
+  "restaurant_id": "JP018",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.535678,
+      13.732345
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 170,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Ramen",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d8d"
+  },
+  "address": {
+    "building": "119",
+    "coord": [
+      100.531234,
+      13.731234
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Tokyo Sushi",
+  "restaurant_id": "JP019",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.531234,
+      13.731234
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 180,
+  "menu": [
+    "Sushi",
+    "Gyoza",
+    "Karaage",
+    "Miso Soup"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555a32b0d0b4816f163d8e"
+  },
+  "address": {
+    "building": "120",
+    "coord": [
+      100.52789,
+      13.733456
+    ],
+    "street": "Chinatown Road",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารบะหมี่เกี๊ยว",
+  "restaurant_id": "CH017",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.52789,
+      13.733456
+    ]
+  },
+  "stars": 4.4,
+  "review_count": 150,
+  "menu": [
+    "บะหมี่เกี๊ยว",
+    "หมูแดง",
+    "เป็ดย่าง",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d8f"
+  },
+  "address": {
+    "building": "121",
+    "coord": [
+      100.526345,
+      13.746543
+    ],
+    "street": "Soi Ari",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวมันไก่",
+  "restaurant_id": "TH025",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.526345,
+      13.746543
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 200,
+  "menu": [
+    "ข้าวมันไก่",
+    "แกงเขียวหวาน",
+    "ยำรวมมิตร",
+    "ผัดไทย"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d90"
+  },
+  "address": {
+    "building": "122",
+    "coord": [
+      100.530987,
+      13.748765
+    ],
+    "street": "Soi Phaholyothin",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารต้มยำกุ้ง",
+  "restaurant_id": "TH026",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.530987,
+      13.748765
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 210,
+  "menu": [
+    "ต้มยำกุ้ง",
+    "กะเพราไก่",
+    "ส้มตำไทย",
+    "ผัดซีอิ๊ว"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d91"
+  },
+  "address": {
+    "building": "123",
+    "coord": [
+      100.534567,
+      13.750123
+    ],
+    "street": "Soi Inthamara",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารก๋วยเตี๋ยวเรือ",
+  "restaurant_id": "TH027",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.534567,
+      13.750123
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 220,
+  "menu": [
+    "ก๋วยเตี๋ยวเรือ",
+    "ข้าวผัดปู",
+    "ผัดกระเพรา",
+    "แกงส้ม"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d92"
+  },
+  "address": {
+    "building": "124",
+    "coord": [
+      100.53789,
+      13.752345
+    ],
+    "street": "Soi Ladprao",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารไก่ทอด",
+  "restaurant_id": "TH028",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.53789,
+      13.752345
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 230,
+  "menu": [
+    "ไก่ทอด",
+    "ต้มแซ่บ",
+    "แกงเขียวหวาน",
+    "ข้าวหมูแดง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d93"
+  },
+  "address": {
+    "building": "125",
+    "coord": [
+      100.540123,
+      13.754567
+    ],
+    "street": "Soi Vibhavadi",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Sushi House",
+  "restaurant_id": "JP020",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.540123,
+      13.754567
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 200,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Ramen"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d94"
+  },
+  "address": {
+    "building": "126",
+    "coord": [
+      100.543456,
+      13.756789
+    ],
+    "street": "Soi Phaholyothin",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Ramen Bar",
+  "restaurant_id": "JP021",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.543456,
+      13.756789
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 180,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Miso Soup",
+    "Karaage"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d95"
+  },
+  "address": {
+    "building": "127",
+    "coord": [
+      100.546789,
+      13.758912
+    ],
+    "street": "Soi Ladprao",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Kyoto Kitchen",
+  "restaurant_id": "JP022",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.546789,
+      13.758912
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 210,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Udon",
+    "Sashimi"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d96"
+  },
+  "address": {
+    "building": "128",
+    "coord": [
+      100.549123,
+      13.761234
+    ],
+    "street": "Soi Vibhavadi",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Tokyo Diner",
+  "restaurant_id": "JP023",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.549123,
+      13.761234
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 230,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Ramen",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d97"
+  },
+  "address": {
+    "building": "129",
+    "coord": [
+      100.552345,
+      13.763456
+    ],
+    "street": "Soi Ari",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารผัดหมี่",
+  "restaurant_id": "CH018",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.552345,
+      13.763456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 190,
+  "menu": [
+    "ผัดหมี่",
+    "หมูกรอบ",
+    "ข้าวมันไก่",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d98"
+  },
+  "address": {
+    "building": "130",
+    "coord": [
+      100.555678,
+      13.765678
+    ],
+    "street": "Soi Phaholyothin",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารกุ้งนึ่ง",
+  "restaurant_id": "CH019",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.555678,
+      13.765678
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 180,
+  "menu": [
+    "กุ้งนึ่ง",
+    "เป็ดย่าง",
+    "บะหมี่เกี๊ยว",
+    "ติ่มซำ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d99"
+  },
+  "address": {
+    "building": "131",
+    "coord": [
+      100.558912,
+      13.768789
+    ],
+    "street": "Soi Ladprao",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารบะหมี่เป็ด",
+  "restaurant_id": "CH020",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.558912,
+      13.768789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 210,
+  "menu": [
+    "บะหมี่เป็ด",
+    "หมูกรอบ",
+    "ข้าวหมูแดง",
+    "เกี๊ยวน้ำ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9a"
+  },
+  "address": {
+    "building": "132",
+    "coord": [
+      100.561234,
+      13.770123
+    ],
+    "street": "Soi Vibhavadi",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูทอด",
+  "restaurant_id": "CH021",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.561234,
+      13.770123
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 220,
+  "menu": [
+    "หมูทอด",
+    "กุ้งนึ่ง",
+    "เป็ดย่าง",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9b"
+  },
+  "address": {
+    "building": "133",
+    "coord": [
+      100.563456,
+      13.772345
+    ],
+    "street": "Soi Ari",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารกะเพราเนื้อ",
+  "restaurant_id": "TH029",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.563456,
+      13.772345
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 230,
+  "menu": [
+    "กะเพราเนื้อ",
+    "ต้มยำกุ้ง",
+    "ข้าวผัดปู",
+    "ผัดไทย"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9c"
+  },
+  "address": {
+    "building": "134",
+    "coord": [
+      100.566789,
+      13.774567
+    ],
+    "street": "Soi Phaholyothin",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวหมูแดง",
+  "restaurant_id": "TH030",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.566789,
+      13.774567
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 240,
+  "menu": [
+    "ข้าวหมูแดง",
+    "แกงเขียวหวาน",
+    "ผัดกะเพรา",
+    "ต้มข่าไก่"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9d"
+  },
+  "address": {
+    "building": "135",
+    "coord": [
+      100.570123,
+      13.776789
+    ],
+    "street": "Soi Ladprao",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวต้ม",
+  "restaurant_id": "TH031",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.570123,
+      13.776789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 250,
+  "menu": [
+    "ข้าวต้ม",
+    "ต้มยำทะเล",
+    "ส้มตำไทย",
+    "แกงส้ม"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9e"
+  },
+  "address": {
+    "building": "136",
+    "coord": [
+      100.573456,
+      13.778912
+    ],
+    "street": "Soi Vibhavadi",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Hokkaido Sushi",
+  "restaurant_id": "JP024",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.573456,
+      13.778912
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 220,
+  "menu": [
+    "Sushi",
+    "Ramen",
+    "Gyoza",
+    "Miso Soup"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163d9f"
+  },
+  "address": {
+    "building": "137",
+    "coord": [
+      100.576789,
+      13.781234
+    ],
+    "street": "Soi Ari",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Japanese",
+  "name": "Osaka Kitchen",
+  "restaurant_id": "JP025",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.576789,
+      13.781234
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 210,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Karaage"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163da0"
+  },
+  "address": {
+    "building": "138",
+    "coord": [
+      100.580123,
+      13.783456
+    ],
+    "street": "Soi Phaholyothin",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารบะหมี่เป็ดย่าง",
+  "restaurant_id": "CH022",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.580123,
+      13.783456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 230,
+  "menu": [
+    "บะหมี่เป็ดย่าง",
+    "ข้าวหมูแดง",
+    "เกี๊ยวน้ำ",
+    "ข้าวผัดกุ้ง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163da1"
+  },
+  "address": {
+    "building": "139",
+    "coord": [
+      100.583456,
+      13.785678
+    ],
+    "street": "Soi Ladprao",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูกรอบ",
+  "restaurant_id": "CH023",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.583456,
+      13.785678
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 210,
+  "menu": [
+    "หมูกรอบ",
+    "เป็ดย่าง",
+    "ติ่มซำ",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163da2"
+  },
+  "address": {
+    "building": "140",
+    "coord": [
+      100.586789,
+      13.78789
+    ],
+    "street": "Soi Vibhavadi",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารข้าวมันไก่",
+  "restaurant_id": "CH024",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.586789,
+      13.78789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 230,
+  "menu": [
+    "ข้าวมันไก่",
+    "หมูแดง",
+    "ติ่มซำ",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555e4cb0d0b4816f163da3"
+  },
+  "address": {
+    "building": "141",
+    "coord": [
+      100.590123,
+      13.790123
+    ],
+    "street": "Soi Ari",
+    "zipcode": "10400"
+  },
+  "borough": "พญาไท",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมี่เป็ด",
+  "restaurant_id": "CH025",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.590123,
+      13.790123
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 220,
+  "menu": [
+    "หมี่เป็ด",
+    "หมูกรอบ",
+    "เกี๊ยวน้ำ",
+    "บะหมี่เป็ดย่าง"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da4"
+  },
+  "address": {
+    "building": "200",
+    "coord": [
+      100.502345,
+      13.751234
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารลาบหมู",
+  "restaurant_id": "TH032",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.502345,
+      13.751234
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 150,
+  "menu": [
+    "ลาบหมู",
+    "ต้มยำกุ้ง",
+    "ข้าวผัดปู",
+    "ผัดไทย"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da5"
+  },
+  "address": {
+    "building": "201",
+    "coord": [
+      100.505678,
+      13.754567
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารแกงเขียวหวาน",
+  "restaurant_id": "TH033",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.505678,
+      13.754567
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 160,
+  "menu": [
+    "แกงเขียวหวาน",
+    "ข้าวหมูแดง",
+    "ต้มแซ่บ",
+    "ส้มตำไทย"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da6"
+  },
+  "address": {
+    "building": "202",
+    "coord": [
+      100.508912,
+      13.75789
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารก๋วยเตี๋ยวต้มยำ",
+  "restaurant_id": "TH034",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.508912,
+      13.75789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 170,
+  "menu": [
+    "ก๋วยเตี๋ยวต้มยำ",
+    "ผัดกะเพรา",
+    "ยำรวมมิตร",
+    "แกงส้ม"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da7"
+  },
+  "address": {
+    "building": "203",
+    "coord": [
+      100.512345,
+      13.760123
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดไทย",
+  "restaurant_id": "TH035",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.512345,
+      13.760123
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 180,
+  "menu": [
+    "ผัดไทย",
+    "ก๋วยเตี๋ยวเรือ",
+    "ต้มยำกุ้ง",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da8"
+  },
+  "address": {
+    "building": "204",
+    "coord": [
+      100.515678,
+      13.762345
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Sushi Master",
+  "restaurant_id": "JP026",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.515678,
+      13.762345
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 200,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Ramen",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163da9"
+  },
+  "address": {
+    "building": "205",
+    "coord": [
+      100.518912,
+      13.765678
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Ramen House",
+  "restaurant_id": "JP027",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.518912,
+      13.765678
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 190,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Miso Soup",
+    "Karaage"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163daa"
+  },
+  "address": {
+    "building": "206",
+    "coord": [
+      100.522345,
+      13.768912
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Tokyo Sushi",
+  "restaurant_id": "JP028",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.522345,
+      13.768912
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 210,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Udon",
+    "Sashimi"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163dab"
+  },
+  "address": {
+    "building": "207",
+    "coord": [
+      100.525678,
+      13.771234
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Osaka Sushi",
+  "restaurant_id": "JP029",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.525678,
+      13.771234
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 220,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Ramen",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163dac"
+  },
+  "address": {
+    "building": "208",
+    "coord": [
+      100.528912,
+      13.773456
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหูฉลาม",
+  "restaurant_id": "CH026",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.528912,
+      13.773456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 190,
+  "menu": [
+    "หูฉลาม",
+    "หมูกรอบ",
+    "ข้าวมันไก่",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163dad"
+  },
+  "address": {
+    "building": "209",
+    "coord": [
+      100.532345,
+      13.775678
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเป็ดย่าง",
+  "restaurant_id": "CH027",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.532345,
+      13.775678
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 180,
+  "menu": [
+    "เป็ดย่าง",
+    "หมูกรอบ",
+    "บะหมี่เกี๊ยว",
+    "ติ่มซำ"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163dae"
+  },
+  "address": {
+    "building": "210",
+    "coord": [
+      100.535678,
+      13.77789
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารข้าวหมูกรอบ",
+  "restaurant_id": "CH028",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.535678,
+      13.77789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 200,
+  "menu": [
+    "ข้าวหมูกรอบ",
+    "หมูแดง",
+    "เกี๊ยวน้ำ",
+    "ข้าวผัดปู"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163daf"
+  },
+  "address": {
+    "building": "211",
+    "coord": [
+      100.538912,
+      13.780123
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูแดง",
+  "restaurant_id": "CH029",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.538912,
+      13.780123
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 210,
+  "menu": [
+    "หมูแดง",
+    "บะหมี่เป็ดย่าง",
+    "ติ่มซำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db0"
+  },
+  "address": {
+    "building": "212",
+    "coord": [
+      100.542345,
+      13.782345
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารไก่ทอด",
+  "restaurant_id": "TH036",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.542345,
+      13.782345
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 160,
+  "menu": [
+    "ไก่ทอด",
+    "ส้มตำไทย",
+    "ข้าวเหนียวหมูย่าง",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db1"
+  },
+  "address": {
+    "building": "213",
+    "coord": [
+      100.545678,
+      13.784567
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวขาหมู",
+  "restaurant_id": "TH037",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.545678,
+      13.784567
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 150,
+  "menu": [
+    "ข้าวขาหมู",
+    "ก๋วยเตี๋ยวเรือ",
+    "ต้มยำกุ้ง",
+    "ส้มตำไทย"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db2"
+  },
+  "address": {
+    "building": "214",
+    "coord": [
+      100.548912,
+      13.786789
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวเหนียวหมูปิ้ง",
+  "restaurant_id": "TH038",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.548912,
+      13.786789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 170,
+  "menu": [
+    "ข้าวเหนียวหมูปิ้ง",
+    "แกงเขียวหวาน",
+    "ผัดกะเพรา",
+    "ต้มแซ่บ"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db3"
+  },
+  "address": {
+    "building": "215",
+    "coord": [
+      100.552345,
+      13.789012
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Kyoto Sushi",
+  "restaurant_id": "JP030",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.552345,
+      13.789012
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 220,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Udon",
+    "Tempura"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db4"
+  },
+  "address": {
+    "building": "216",
+    "coord": [
+      100.555678,
+      13.791234
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Japanese",
+  "name": "Hokkaido Kitchen",
+  "restaurant_id": "JP031",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.555678,
+      13.791234
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 210,
+  "menu": [
+    "Sushi",
+    "Ramen",
+    "Tempura",
+    "Miso Soup"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db5"
+  },
+  "address": {
+    "building": "217",
+    "coord": [
+      100.558912,
+      13.793456
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเป็ดพะโล้",
+  "restaurant_id": "CH030",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.558912,
+      13.793456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 200,
+  "menu": [
+    "เป็ดพะโล้",
+    "ข้าวหมูแดง",
+    "เกี๊ยวน้ำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db6"
+  },
+  "address": {
+    "building": "218",
+    "coord": [
+      100.562345,
+      13.795678
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูแดง",
+  "restaurant_id": "CH031",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.562345,
+      13.795678
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 190,
+  "menu": [
+    "หมูแดง",
+    "เป็ดย่าง",
+    "ติ่มซำ",
+    "ข้าวมันไก่"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "66555efcb0d0b4816f163db7"
+  },
+  "address": {
+    "building": "219",
+    "coord": [
+      100.565678,
+      13.798912
+    ],
+    "street": "Soi Sukhumvit",
+    "zipcode": "10110"
+  },
+  "borough": "วัฒนา",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูกรอบ",
+  "restaurant_id": "CH032",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.565678,
+      13.798912
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 210,
+  "menu": [
+    "หมูกรอบ",
+    "เป็ดย่าง",
+    "ติ่มซำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163db8"
+  },
+  "address": {
+    "building": "301",
+    "coord": [
+      100.570123,
+      13.800123
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารตำลึง",
+  "restaurant_id": "TH039",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.570123,
+      13.800123
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 180,
+  "menu": [
+    "ต้มยำกุ้ง",
+    "ผัดไทย",
+    "ข้าวมันไก่",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163db9"
+  },
+  "address": {
+    "building": "302",
+    "coord": [
+      100.573456,
+      13.802345
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารก๋วยเตี๋ยวเรือ",
+  "restaurant_id": "TH040",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.573456,
+      13.802345
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 190,
+  "menu": [
+    "ก๋วยเตี๋ยวเรือ",
+    "ผัดกระเพรา",
+    "ส้มตำไทย",
+    "ยำวุ้นเส้น"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dba"
+  },
+  "address": {
+    "building": "303",
+    "coord": [
+      100.576789,
+      13.804567
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารข้าวหมูแดง",
+  "restaurant_id": "TH041",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.576789,
+      13.804567
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 200,
+  "menu": [
+    "ข้าวหมูแดง",
+    "หมูกรอบ",
+    "ข้าวมันไก่",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dbb"
+  },
+  "address": {
+    "building": "304",
+    "coord": [
+      100.580123,
+      13.806789
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดกระเพรา",
+  "restaurant_id": "TH042",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.580123,
+      13.806789
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 210,
+  "menu": [
+    "ผัดกระเพรา",
+    "ต้มยำกุ้ง",
+    "ข้าวมันไก่",
+    "ยำรวมมิตร"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dbc"
+  },
+  "address": {
+    "building": "305",
+    "coord": [
+      100.583456,
+      13.809012
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Sushi World",
+  "restaurant_id": "JP032",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.583456,
+      13.809012
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 220,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Ramen"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dbd"
+  },
+  "address": {
+    "building": "306",
+    "coord": [
+      100.586789,
+      13.811234
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Tokyo Delight",
+  "restaurant_id": "JP033",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.586789,
+      13.811234
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 230,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Sashimi",
+    "Miso Soup"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dbe"
+  },
+  "address": {
+    "building": "307",
+    "coord": [
+      100.590123,
+      13.813456
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Noodle House",
+  "restaurant_id": "JP034",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.590123,
+      13.813456
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 240,
+  "menu": [
+    "Ramen",
+    "Tempura",
+    "Sushi",
+    "Udon"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dbf"
+  },
+  "address": {
+    "building": "308",
+    "coord": [
+      100.593456,
+      13.815678
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Sakura Sushi",
+  "restaurant_id": "JP035",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.593456,
+      13.815678
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 250,
+  "menu": [
+    "Sushi",
+    "Tempura",
+    "Sashimi",
+    "Ramen"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc0"
+  },
+  "address": {
+    "building": "309",
+    "coord": [
+      100.596789,
+      13.81789
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารบะหมี่",
+  "restaurant_id": "CH033",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.596789,
+      13.81789
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 260,
+  "menu": [
+    "บะหมี่เกี๊ยว",
+    "หมูแดง",
+    "เกี๊ยวน้ำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc1"
+  },
+  "address": {
+    "building": "310",
+    "coord": [
+      100.600123,
+      13.820123
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารปักกิ่ง",
+  "restaurant_id": "CH034",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.600123,
+      13.820123
+    ]
+  },
+  "stars": 4.5,
+  "review_count": 270,
+  "menu": [
+    "เป็ดย่างปักกิ่ง",
+    "ติ่มซำ",
+    "ข้าวผัดปู",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc2"
+  },
+  "address": {
+    "building": "311",
+    "coord": [
+      100.603456,
+      13.822345
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารซาลาเปา",
+  "restaurant_id": "CH035",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.603456,
+      13.822345
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 280,
+  "menu": [
+    "ซาลาเปา",
+    "ติ่มซำ",
+    "ข้าวหมูแดง",
+    "ข้าวมันไก่"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc3"
+  },
+  "address": {
+    "building": "312",
+    "coord": [
+      100.606789,
+      13.824567
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารติ่มซำ",
+  "restaurant_id": "CH036",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.606789,
+      13.824567
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 290,
+  "menu": [
+    "ติ่มซำ",
+    "ข้าวผัดปู",
+    "เกี๊ยวน้ำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc4"
+  },
+  "address": {
+    "building": "313",
+    "coord": [
+      100.610123,
+      13.826789
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารไก่ย่าง",
+  "restaurant_id": "TH043",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.610123,
+      13.826789
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 300,
+  "menu": [
+    "ไก่ย่าง",
+    "ส้มตำไทย",
+    "ข้าวเหนียวหมูย่าง",
+    "แกงเขียวหวาน"
+  ],
+  "PriceRange": 2
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc5"
+  },
+  "address": {
+    "building": "314",
+    "coord": [
+      100.613456,
+      13.828912
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารหมูย่าง",
+  "restaurant_id": "TH044",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.613456,
+      13.828912
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 310,
+  "menu": [
+    "หมูย่าง",
+    "ข้าวมันไก่",
+    "ต้มยำกุ้ง",
+    "ยำรวมมิตร"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc6"
+  },
+  "address": {
+    "building": "315",
+    "coord": [
+      100.616789,
+      13.831234
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารตำไทย",
+  "restaurant_id": "TH045",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.616789,
+      13.831234
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 320,
+  "menu": [
+    "ส้มตำไทย",
+    "ไก่ย่าง",
+    "ต้มยำกุ้ง",
+    "ผัดกระเพรา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc7"
+  },
+  "address": {
+    "building": "316",
+    "coord": [
+      100.620123,
+      13.833456
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Thai",
+  "name": "ร้านอาหารผัดซีอิ๊ว",
+  "restaurant_id": "TH046",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.620123,
+      13.833456
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 330,
+  "menu": [
+    "ผัดซีอิ๊ว",
+    "ข้าวมันไก่",
+    "ต้มยำกุ้ง",
+    "ยำรวมมิตร"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc8"
+  },
+  "address": {
+    "building": "317",
+    "coord": [
+      100.623456,
+      13.835678
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Yokohama Ramen",
+  "restaurant_id": "JP036",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.623456,
+      13.835678
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 340,
+  "menu": [
+    "Ramen",
+    "Gyoza",
+    "Tempura",
+    "Sashimi"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dc9"
+  },
+  "address": {
+    "building": "318",
+    "coord": [
+      100.626789,
+      13.83789
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Osaka Sushi",
+  "restaurant_id": "JP037",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.626789,
+      13.83789
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 350,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Ramen"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dca"
+  },
+  "address": {
+    "building": "319",
+    "coord": [
+      100.630123,
+      13.840123
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Japanese",
+  "name": "Sapporo Sushi",
+  "restaurant_id": "JP038",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.630123,
+      13.840123
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 360,
+  "menu": [
+    "Sushi",
+    "Sashimi",
+    "Tempura",
+    "Udon"
+  ],
+  "PriceRange": 4
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dcb"
+  },
+  "address": {
+    "building": "320",
+    "coord": [
+      100.633456,
+      13.842345
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเป็ดพะโล้",
+  "restaurant_id": "CH037",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.633456,
+      13.842345
+    ]
+  },
+  "stars": 4.8,
+  "review_count": 370,
+  "menu": [
+    "เป็ดพะโล้",
+    "ข้าวหมูแดง",
+    "เกี๊ยวน้ำ",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dcc"
+  },
+  "address": {
+    "building": "321",
+    "coord": [
+      100.636789,
+      13.844567
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารหมูกรอบ",
+  "restaurant_id": "CH038",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.636789,
+      13.844567
+    ]
+  },
+  "stars": 4.7,
+  "review_count": 380,
+  "menu": [
+    "หมูกรอบ",
+    "เป็ดย่าง",
+    "ติ่มซำ",
+    "ข้าวมันไก่"
+  ],
+  "PriceRange": 3
+},
+{
+  "_id": {
+    "$oid": "665561ebb0d0b4816f163dcd"
+  },
+  "address": {
+    "building": "322",
+    "coord": [
+      100.640123,
+      13.846789
+    ],
+    "street": "Soi Silom",
+    "zipcode": "10500"
+  },
+  "borough": "บางรัก",
+  "cuisine": "Chinese",
+  "name": "ร้านอาหารเกี๊ยวน้ำ",
+  "restaurant_id": "CH039",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      100.640123,
+      13.846789
+    ]
+  },
+  "stars": 4.6,
+  "review_count": 390,
+  "menu": [
+    "เกี๊ยวน้ำ",
+    "ข้าวหมูแดง",
+    "เป็ดย่าง",
+    "ซาลาเปา"
+  ],
+  "PriceRange": 3
+}]
