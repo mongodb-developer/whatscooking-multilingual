@@ -1,0 +1,1 @@
+mongodb_uri = "mongodb+srv://mongodb:atlassearch@whatscooking.8u6sklg.mongodb.net/whatscooking"

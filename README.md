@@ -89,86 +89,28 @@ mongodb+srv://mongodb:atlassearch@whatscooking.8u6sklg.mongodb.net/whatscooking
 </ul>
 </ol>
 
+<h2> Deploy HTTPS Endpoints at your own AWS environment</h2>
 
-<h2> Deploy HTTPS Endpoints at your own env</h2>
-<ol>
-<li>Create Application</li>
-At your Atlas UI, click <code>Create a New App</code></br>
-Name your application whatever you wish. </br>
-After ensuring it is linked to the correct cluster, click the CREATE APP SERVICE button.
-<li>Create HTTPS Endpoints</li>
-Go to <code>HTTPS Endpoints</code> at navigation bar at left and click <code>Add An Endpoint</code></br>
-Create following 3 HTTP endpoints</br>
-
-<table>
-	<tbody>
-		<tr>
-			<th>Route</th>
-			<th>Source code of function</th>
-			<th>HTTP methods</th>
-            <th>Respond With Result</th>
-            <th>Return Type</th>
-		</tr>
-		<tr>
-			<td>/restaurants/getRestaurantsAutocomplete</td>
-			<td>appservice/functions/getRestaurantsAutocomplete.js</td>
-			<td>GET</td>
-            <td>Enable</td>
-            <td>JSON</td>
-		</tr>
-		<tr>
-			<td>/getRestaurants</td>
-			<td>appservice/functions/getRestaurants.js</td>
-			<td>POST</td>
-            <td>Enable</td>
-            <td>JSON</td>
-		</tr>
-		<tr>
-			<td>/restaurants/getFacets</td>
-			<td>appservice/functions/getFacets.js
-</td>
-			<td>POST</td>
-            <td>Enable</td>
-            <td>JSON</td>
-		</tr>
-        <tr>
-			<td>/synonyms/getFoodSynonyms</td>
-			<td>appservice/functions/getFoodSynonyms.js</td>
-			<td>POST</td>
-            <td>Enable</td>
-            <td>JSON</td>
-		</tr>
-	</tbody>
-</table>
-
-Please keep default value for other options and click <code>Save Draft</code>
-
-<li>Function Setting</li>
-Go to <code>Function</code> at navigation bar at left</br>
-At each function which you created, go to <code>Settings</code> tab, choose <code>System</code> at Authentigation and click <code>Save Draft</code>
-
-<li>Deploy app</li>
-At the top of UI, click <code>REVIEW DRAFT & DEPLOY</code>
-</ol>
+Follow the instructions in [Whatscooking BaaS using AWS Lambda Functions](./lambda/README.md)
 
 <h2> Testing HTTPS endpoints</h2>
 You can test each HTTPS endpoints with the following commands
-<h3>/restaurants/getRestaurantsAutocomplete</h3>
+<h3>getRestaurantsAutocomplete</h3>
 command
 <pre>
-$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getRestaurantsAutocomplete?restname="burger"&locale=en
+curl https://7voovjzrkjgdudds53so7rtsae0vjouf.lambda-url.ap-southeast-1.on.aws?restname=burger&locale=en
 </pre>
 response
 <pre>
 [{"_id":"6095a34a7c34416a90d3212d","name":"Burger King","restaurant_id":"40370238"},{"_id":"6095a34a7c34416a90d3212e","name":"Burger King","restaurant_id":"40370167"},{"_id":"6095a34a7c34416a90d32135","name":"Burger King","restaurant_id":"40370239"},{"_id":"6095a34a7c34416a90d3214b","name":"Burger King","restaurant_id":"40370916"},{"_id":"6095a34a7c34416a90d32164","name":"Burger King","restaurant_id":"40370917"},{"_id":"6095a34a7c34416a90d32166","name":"Burger King","restaurant_id":"40372422"},{"_id":"6095a34a7c34416a90d3216b","name":"Burger King","restaurant_id":"40372618"},{"_id":"6095a34a7c34416a90d321b4","name":"Cozy Soup \u0026 Burger","restaurant_id":"40375839"},{"_id":"6095a34a7c34416a90d3228a","name":"Burger Barn Restaurant","restaurant_id":"40384486"}]
 </pre>
-<h3>/getRestaurants</h3>
+<h3>getRestaurants</h3>
 command
 <pre>
 curl \
 -H "Content-Type: application/json" \
 -d '{"searchTerm": "burger ", "food": "", "operator": "text",    "dist": 1, "stars": 1, "cuisine": [], "locale": "en"}' \
-https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/getRestaurants
+https://f6lhyweuc6xvqp5jylghwt7v5u0qzwjz.lambda-url.ap-southeast-1.on.aws 
 
 </pre>
 
@@ -177,24 +119,23 @@ response
 {"aggString":"[{\"$search\":{\"text\":{\"query\":\"burger \",\"path\":\"name\",\"fuzzy\":{\"maxEdits\":2}}}},{\"$limit\":21},{\"$project\":{\"name\":1,\"cuisine\":1,\"borough\":1,\"location\":1,\"menu\":1,\"restaurant_id\":1,\"address.street\":1,\"stars\":1,\"review_count\":1,\"PriceRange\":1,\"sponsored\":1,\"score\":{\"$meta\":\"searchScore\"},\"highlights\":{\"$meta\":\"searchHighlights\"}}}]","restaurants":[{"_id":"6095a4864ba3a04a69a79eba","address":{"street":"Pearl Street"},"borough":"Manhattan","cuisine":"Hamburgers","name":"Burger Burger","restaurant_id":"41316784","location":{"type":"Point","coordinates":[-74.0105051,40.7040805]},"stars":3.5,"review_count":159,"menu":["Bacon burger","Santa Fe burger","Ahi Tuna burger","Cheeseburger","Loaded Fries","Mushroom swiss burger","Hickory burger","Classic burger","Fajita burger","Oldtimer with cheese","French Fries","Vegetarian burger"],"PriceRange":2,"score":3.3074374198913574},{"_id":"6095a34a7c34416a90d3212d","address":{"street":"Northern Boulevard"},"borough":"Queens","cuisine":"Hamburgers","name":"Burger King","restaurant_id":"40370238","location":{"type":"Point","coordinates":[-73.89707140000002,40.7543896]},"stars":3,"review_count":38,"menu":["Cheeseburger","Ahi Tuna burger","Chili Cheeseburger","Buffalo Fries","Vegetarian burger","Loaded Fries","French Fries","Classic burger","Triple layer burger","Oldtimer with cheese","Hickory burger","Oldtimer"],"PriceRange":2,"score":2.49027419090271}, ...}
 </pre>
 
-<h3>/restaurants/getFacets</h3>
+<h3>getFacets</h3>
 command
 <pre>
 curl \
 -H "Content-Type: application/json" \
 -d '{"searchTerm": "burger", "food": "", "operator": "text", "dist": 1, "stars": 1, "cuisine": [], "locale": "en"}' \
-https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getFacets
+https://cwoaaqy74pwe76cajhevu7kaby0eutbe.lambda-url.ap-southeast-1.on.aws
 </pre>
 
 response
 <pre>
 {"results":[{"count":{"lowerBound":183},"facet":{"cuisineFacet":{"buckets":[{"_id":"Hamburgers","count":105},{"_id":"American","count":69},{"_id":"Other","count":3},{"_id":"Jewish/Kosher","count":2},{"_id":"Pizza/Italian","count":2},{"_id":"Latin (Cuban, Dominican, Puerto Rican, South \u0026 Central American)","count":1},{"_id":"Mexican","count":1}]},"boroughFacet":{"buckets":[{"_id":"Manhattan","count":69},{"_id":"Brooklyn","count":47},{"_id":"Queens","count":36},{"_id":"Bronx","count":23},{"_id":"Staten Island","count":8}]}}}],"searchMetaStageString":"{\"$searchMeta\":{\"index\":\"facetIndex\",\"facet\":{\"operator\":{\"text\":{\"query\":\"burger\",\"path\":[\"name\",\"cuisine\"]}},\"facets\":{\"cuisineFacet\":{\"type\":\"string\",\"path\":\"cuisine\"},\"boroughFacet\":{\"type\":\"string\",\"path\":\"borough\"}}}}}","searchMetaStage":{"$searchMeta":{"index":"facetIndex","facet":{"operator":{"text":{"query":"burger","path":["name","cuisine"]}},"facets":{"cuisineFacet":{"type":"string","path":"cuisine"},"boroughFacet":{"type":"string","path":"borough"}}}}},"ok":true}
 </pre>
-<h3>/synonyms/getFoodSynonyms</h3>
+<h3>getFoodSynonyms</h3>
 command
 <pre>
-$curl https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?locale=en
-
+curl https://nqez7rq6c6hkbsydjsf3ktpfru0qkaan.lambda-url.ap-southeast-1.on.aws?locale=en
 </pre>
 
 response
@@ -205,7 +146,7 @@ response
 <h2>To Run This Application....</h2>
 
 1. Clone the repo.
-2. Navigate inside `whatsCooking-multilingual` directory.
+2. Navigate inside `whatscooking-multilingual` directory.
 3. Run <code>npm install</code> .
 4. Change HTTPS endpoint urls at <code>src/hooks/useHomeFetch.js</code> to your own ones.
 5. Change HTTPS endpoint urls at <code>src/compenents/SearchBar.js</code> to your own one.
@@ -226,8 +167,8 @@ response
     <img src="Main.png" width="550"  />
 </p>
 
-<h2>Using Realm as Your Serverless Backend....</h2>
-<p>What's Cooking uses HTTP services in Realm to create 5 APIs to allow you to query for your restaurant data over HTTP: </p>
+<h2>Using AWS Lambda as Your Serverless Backend....</h2>
+<p>What's Cooking uses AWS Lambda Functions to create 5 APIs to allow you to query for your restaurant data over HTTP: </p>
 
 - `GetRestaurantsEndPoint` called from the `useHomeFetch.js` hook.
 - `GetFacetsEndpoint` called from the `useHomeFetch.js` hook.

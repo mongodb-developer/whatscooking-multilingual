@@ -3,8 +3,8 @@ import { useContext, useEffect } from "react";
 import { SearchParametersContext } from "../store/SearchParametersContext";
 import { useTranslation } from 'react-i18next';
 
-const GetRestaurantsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/getRestaurants`;
-const GetFacetsEndpoint = `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getFacets`;
+const GetRestaurantsEndpoint = `https://f6lhyweuc6xvqp5jylghwt7v5u0qzwjz.lambda-url.ap-southeast-1.on.aws`;
+const GetFacetsEndpoint = `https://cwoaaqy74pwe76cajhevu7kaby0eutbe.lambda-url.ap-southeast-1.on.aws`;
 
 export const useHomeFetch = () => {
   const {

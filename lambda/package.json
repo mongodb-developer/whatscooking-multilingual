@@ -1,0 +1,14 @@
+{
+  "name": "isodd-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "layer:build": "cd nodejs && npm install && cd .. && zip -r nodejs.zip nodejs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

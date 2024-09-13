@@ -1,65 +1,83 @@
-exports = async function(payload, response) {
-    console.log("IN GETRESTAURANTS POST REQUEST");
+const { MongoClient } = require("mongodb");
+const EJSON = require("ejson");
 
-    if (!payload.body) {
-       return({
-              ok:false,
-              msg:"No payload body"
-            });
+const { MONGODB_URI } = process.env;
+
+const client = new MongoClient(MONGODB_URI);
+
+exports.handler = async (event) => {
+    console.log("IN GETRESTAURANTS POST REQUEST");
+    console.debug(`Event: ${JSON.stringify(event)}`);
+
+    if (!event.body) {
+      return {
+        statusCode: 400,
+        body: {
+            ok: false,
+            msg: "No payload body",
+        }, 
+       };
     }
 
-      let searchParameters = EJSON.parse(payload.body.text());
-      console.log(JSON.stringify(searchParameters));
-      let { searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, locale, lng, lat } = searchParameters;
+    let searchParameters = EJSON.parse(event.body);
+    console.log(JSON.stringify(searchParameters));
+    let { searchTerm, food, operator, functionScore, dist, borough, stars, cuisine, locale, lng, lat } = searchParameters;
 
-      if (lng === undefined || lat === undefined) {
-        lng = -73.98474;
-        lat = 40.76289;
-  
-        console.log('Longitude or Latitude is not defined. Using default values')
-      }
+    if (lng === undefined || lat === undefined) {
+      lng = -73.98474;
+      lat = 40.76289;
 
-      // Querying a mongodb collection:
-      const collection = context.services.get("mongodb-atlas").db("whatscooking").collection('restaurants_' + locale);
+      console.log('Longitude or Latitude is not defined. Using default values')
+    }
 
-       // EMPTY SEARCH
-      if (!searchTerm && !food && (operator==="text") && (cuisine.length===0) && (stars ===1)){   // added && (stars ===1) Jan 3
-        return {
-          aggString:"",
+    // Querying a mongodb collection:
+    await client.connect();
+    const collection = client.db('whatscooking').collection(`restaurants_${locale}`);
+
+    // EMPTY SEARCH
+    if (!searchTerm && !food && (operator==="text") && (cuisine.length===0) && (stars ===1)){   // added && (stars ===1) Jan 3
+      return {
+        statusCode: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: {
+          aggString: "",
           restaurants: [],
           restaurantsCount : 0,
-          searchStage:"empty",
-          limitStage:"empty",
-          projectStage:"empty",
+          searchStage: "empty",
+          limitStage: "empty",
+          projectStage: "empty",
           ok:true
-        };
-      }   
-      
-      let pathArray = "name";
-      let foodArray=[];
-      if (food){
-        foodArray =  food.split(',').map(item=>item.trim());
-      }
-     
-      let distance = 1609;
-      const METERS_PER_MILE = 1609.0;
+        }, 
+       };      
+    }   
     
+    let pathArray = "name";
+    let foodArray=[];
+    if (food){
+      foodArray =  food.split(',').map(item=>item.trim());
+    }
+    
+    let distance = 1609;
+    const METERS_PER_MILE = 1609.0;
   
-      if (dist){
-        dist = parseFloat(dist);
-        distance = dist * METERS_PER_MILE;
-      }
-      
-      if (stars){
-        stars = parseFloat(stars);
-      }
-      
-     
-    //  //MongoDB NYC Office
-    //  const lat = 40.76289;
-    //  const long = -73.984
-     
-      let calledAggregation = [];
+
+    if (dist){
+      dist = parseFloat(dist);
+      distance = dist * METERS_PER_MILE;
+    }
+    
+    if (stars){
+      stars = parseFloat(stars);
+    }
+    
+    
+  //  //MongoDB NYC Office
+  //  const lat = 40.76289;
+  //  const long = -73.984
+    
+    let calledAggregation = [];
       
   /******************************** NOW I HAVE ALL NECESSARY PARAMETERS --- CAN START BUILDING ***********************************/
        
@@ -80,24 +98,21 @@ exports = async function(payload, response) {
       
       const results = await collection.aggregate(calledAggregation).toArray();
 
-      response.setStatusCode(200)
-      response.setBody = JSON.stringify({aggString: aggString, restaurants: results, restaurantsConut: results.length, searchStage: searchStageString, limitStage: limitStageString, projectStage: projectStageString, ok: true})
-      response.setHeader(
-        "Content-Type",
-        "application/json"
-      );
-      console.log(response.setBody)
-
       return {
-        aggString:aggString,
-        restaurants: results,
-        restaurantsCount : results.length,
-        searchStage:searchStageString,        // sending back Strings instead of Objects to avoid BSON in the AggregationModal on the front end
-        limitStage:limitStageString,
-        projectStage:projectStageString,
-        ok:true
-      }
-    
+        statusCode: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: {
+          aggString: aggString,
+          restaurants: results,
+          restaurantsCount: results.length,
+          searchStage: searchStageString,      
+          limitStage: limitStageString,
+          projectStage: projectStageString,
+          ok: true
+        }, 
+       };   
   };
   
   function buildSearchStage(searchTerm, food, foodArray, pathArray, operator, distance, borough, cuisine, stars, functionScore, lng, lat){
