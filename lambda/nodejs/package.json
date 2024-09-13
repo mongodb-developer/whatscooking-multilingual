@@ -1,0 +1,13 @@
+{
+  "name": "isodd-layer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejson": "^2.2.3",
+    "mongodb": "^6.8.1"
+  }
+}

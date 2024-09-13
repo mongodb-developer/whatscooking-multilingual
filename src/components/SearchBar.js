@@ -24,7 +24,7 @@ const SearchBar = ({
   // if (searchTerm === "") setShowSuggestions(false);
 
   const Suggestions_AC_Endpoint =
-    "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/restaurants/getRestaurantsAutocomplete";
+    "https://7voovjzrkjgdudds53so7rtsae0vjouf.lambda-url.ap-southeast-1.on.aws";
   
   const { t } = useTranslation();
 

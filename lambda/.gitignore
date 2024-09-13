@@ -1,0 +1,8 @@
+*.zip
+dist
+terraform
+.terraform
+*.tfstate
+*.tfstate.*
+*.hcl
+node_modules

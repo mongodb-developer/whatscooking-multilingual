@@ -24,7 +24,7 @@ const SynonymsPage = () => {
   const getSynonyms = async () => {
     let storedSynonyms = await (
       await fetch(
-        "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-rgjfz/endpoint/synonyms/getFoodSynonyms?locale=" + t('locale')
+        `https://nqez7rq6c6hkbsydjsf3ktpfru0qkaan.lambda-url.ap-southeast-1.on.aws?locale=${t('locale')}`
       )
     ).json();
     setLoadedSynonyms(storedSynonyms.foodSynonyms);
